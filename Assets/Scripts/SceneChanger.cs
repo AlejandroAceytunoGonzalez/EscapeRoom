@@ -14,17 +14,18 @@ public class SceneChanger : MonoBehaviour
     }
     private IEnumerator LoadSceneAsync(string sceneName)
     {
-        loadingScreen.Start();
+        loadingScreen.StartLoading();
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         operation.allowSceneActivation = false;
+        yield return new WaitForSeconds(loadingScreen.MinLoadtime);
         while (!operation.isDone)
         {
             if (operation.progress >= 0.9f)
             {
+                loadingScreen.EndLoading();
                 operation.allowSceneActivation = true;
             }
             yield return null;
         }
-        loadingScreen.End();
     }
 }
