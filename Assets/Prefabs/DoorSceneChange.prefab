@@ -119,8 +119,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e3eb6b9b4265fa42ac617b2d3f23e81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  events:
-  - m_PersistentCalls:
+  unityEvent:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 2987193422775517628}
         m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
@@ -148,5 +148,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6046f40d99f28fb4b8ba7c66f0e6cedf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingScreen: {fileID: 0}
-  loadingBar: {fileID: 0}

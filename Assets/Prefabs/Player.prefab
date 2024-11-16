@@ -99,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   sprintSpeed: 10
-  cameraTransform: {fileID: 0}
+  interactionRange: 10
 --- !u!1 &2449337112903353372
 GameObject:
   m_ObjectHideFlags: 0

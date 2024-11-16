@@ -5,9 +5,9 @@ using UnityEngine.Events;
 
 public class Interactable : MonoBehaviour
 {
-    [SerializeField] List<UnityEvent> events = new List<UnityEvent>();
-    [SerializeField] InteractableType type = InteractableType.Manual;
-    [SerializeField] float interactionCooldown = -1f; //-1 is only once, 0 is no cooldown.
+    [SerializeField] private UnityEvent unityEvent = new UnityEvent();
+    [SerializeField] private InteractableType type = InteractableType.Manual;
+    [SerializeField] private float interactionCooldown = -1f; //-1 is only once, 0 is no cooldown.
 
     private bool isInteracted;
 
@@ -16,9 +16,7 @@ public class Interactable : MonoBehaviour
         if (!isInteracted) {
             isInteracted = true;
             StopAllCoroutines();
-            foreach (UnityEvent e in events) {
-                e.Invoke();
-            }
+            unityEvent.Invoke();
             if(interactionCooldown == 0)
             {
                 isInteracted = false;
@@ -27,6 +25,14 @@ public class Interactable : MonoBehaviour
                 Invoke("EnableInteraction", interactionCooldown);
             }
         }
+    }
+    public void SetUnityEvent(UnityEvent unityEvent)
+    {
+        this.unityEvent = unityEvent;
+    }
+    public UnityEvent GetUnityEvent()
+    { 
+        return unityEvent; 
     }
     public void EnableInteraction()
     {
