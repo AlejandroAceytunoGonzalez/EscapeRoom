@@ -19,6 +19,7 @@ public class LoadingScreen : MonoBehaviour
     }
     public void EndLoading()
     {
+        FindObjectOfType<PlayerController>().SetCanMove(true);
         loadingScreen.SetBool("isEnabled", false);
     }
 }

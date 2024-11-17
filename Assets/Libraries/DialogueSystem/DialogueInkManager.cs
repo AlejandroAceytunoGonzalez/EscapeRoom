@@ -42,6 +42,11 @@ public class DialogueInkManager : MonoBehaviour
         {
             string text = story.Continue();
             text = text.Trim();
+            if (string.IsNullOrEmpty(text))
+            {
+                OnStoryEnd?.Invoke(this, EventArgs.Empty);
+                return;
+            }
             if (story.currentChoices.Count > 0)
             {
                 //Story has choices in next line
