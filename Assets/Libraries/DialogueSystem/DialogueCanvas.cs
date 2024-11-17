@@ -61,6 +61,7 @@ public class DialogueCanvas : MonoBehaviour
         optionsDisplay.gameObject.SetActive(true);
 
         optionsDisplay.setText(dialogueInk.GetCurrentText());
+        if (dialogueInk.GetCurrentTags().Count > 0) optionsDisplay.setTitle(dialogueInk.GetCurrentTags()[0]);
         optionsDisplay.CreateOptions(e.choices, choiceEvents);
     }
 

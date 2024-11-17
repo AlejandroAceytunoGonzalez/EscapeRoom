@@ -24,6 +24,20 @@ namespace ProceduralGrass
         {
             GrassInteractorManager.Update(id, new GrassInteractorPoint(Vector3.zero, 0, 0));
         }
+        public void SetRadius(float newRadius)
+        {
+            if (newRadius >= 0)
+            {
+                radius = newRadius;
+            }
+        }
+        public void SetForce(float newForce)
+        {
+            if (newForce >= 0.01f && newForce <= 3f)
+            {
+                force = newForce;
+            }
+        }
     }
 
     #if UNITY_EDITOR
