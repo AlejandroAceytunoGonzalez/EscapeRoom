@@ -11,7 +11,10 @@ public class CharacterSwap : MonoBehaviour
     {
         PlayerController.OnCharacterChange += PlayerController_OnCharacterChange;
     }
-
+    private void OnDestroy()
+    {
+        PlayerController.OnCharacterChange -= PlayerController_OnCharacterChange;
+    }
     private void PlayerController_OnCharacterChange(Character playerCharacter)
     {
         if (character == playerCharacter)
