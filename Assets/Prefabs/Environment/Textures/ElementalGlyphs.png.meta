@@ -1,0 +1,371 @@
+fileFormatVersion: 2
+guid: 293e27a43ad918a4b9e398e0cc8252bf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ElementalGlyphs_Ice
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 715
+        width: 96
+        height: 230
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f747ed45321ba4647833ad46e6cada6a
+      internalID: -293114939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Air
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 763
+        width: 131
+        height: 182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96eb0f1919c955e49b1815b0a1f656ff
+      internalID: -219113741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Water
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 800
+        width: 136
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b452a8bb125fe2947bca75d5353567b9
+      internalID: 413053566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Earth
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 499
+        width: 131
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec22db7bbf8eba45a9669824fe84300
+      internalID: 1373285759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Fire
+      rect:
+        serializedVersion: 2
+        x: 462
+        y: 507
+        width: 86
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05e2420fd547cc4dabf73fce9021f45
+      internalID: 1463959891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Nature
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 524
+        width: 190
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4c6039de4b272b469360f6acaf8c549
+      internalID: 1718508127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Darkness
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 304
+        width: 120
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2e8014937089942aee545b9467f044
+      internalID: -634768654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Metal
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 298
+        width: 87
+        height: 140
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea22553d2df01f47bfe07dbcadff704
+      internalID: 1460606503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Light
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 277
+        width: 220
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0577cdfc20fa8499ece602b19fc6a7
+      internalID: -395837473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElementalGlyphs_Spark
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 71
+        width: 193
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e58ed002a33c5194db48f1b7341c618b
+      internalID: 625089150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ffc2f70ae5a768241a2bbaf14598c10a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ElementalGlyphs_10: 767231595
+      ElementalGlyphs_11: -634506995
+      ElementalGlyphs_12: 1255942956
+      ElementalGlyphs_13: -1421864174
+      ElementalGlyphs_14: 1032817279
+      ElementalGlyphs_16: -398825080
+      ElementalGlyphs_18: 2049970728
+      ElementalGlyphs_19: -1558123642
+      ElementalGlyphs_2: 1315159259
+      ElementalGlyphs_20: 2041020869
+      ElementalGlyphs_21: -2026194943
+      ElementalGlyphs_22: 740094823
+      ElementalGlyphs_23: -1067667941
+      ElementalGlyphs_26: -1228663909
+      ElementalGlyphs_27: -1770792107
+      ElementalGlyphs_29: 2101777146
+      ElementalGlyphs_3: 415548742
+      ElementalGlyphs_30: 93577484
+      ElementalGlyphs_31: -1901851025
+      ElementalGlyphs_33: 839104834
+      ElementalGlyphs_5: -103850999
+      ElementalGlyphs_6: 1250304211
+      ElementalGlyphs_7: 2089291
+      ElementalGlyphs_9: -1223205826
+      ElementalGlyphs_Air: -219113741
+      ElementalGlyphs_Darkness: -634768654
+      ElementalGlyphs_Earth: 1373285759
+      ElementalGlyphs_Fire: 1463959891
+      ElementalGlyphs_Ice: -293114939
+      ElementalGlyphs_Light: -395837473
+      ElementalGlyphs_Metal: 1460606503
+      ElementalGlyphs_Nature: 1718508127
+      ElementalGlyphs_Spark: 625089150
+      ElementalGlyphs_Water: 413053566
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
