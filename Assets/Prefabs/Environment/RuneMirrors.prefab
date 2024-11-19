@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &7733793909479419566
+--- !u!1001 &4210145762473942682
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6856e665c299f634cbbc28315c044dec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.09732
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6856e665c299f634cbbc28315c044dec,
         type: 3}
@@ -21,7 +21,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6856e665c299f634cbbc28315c044dec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -62.827427
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6856e665c299f634cbbc28315c044dec,
         type: 3}
@@ -58,10 +58,65 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7940946226979607483, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorGearsB
+      objectReference: {fileID: 0}
+    - target: {fileID: -5538985522780130180, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorH
+      objectReference: {fileID: 0}
+    - target: {fileID: -1688617927700330159, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorC
+      objectReference: {fileID: 0}
+    - target: {fileID: -1025663018108745142, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorA
+      objectReference: {fileID: 0}
+    - target: {fileID: -998708227812776082, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorG
+      objectReference: {fileID: 0}
+    - target: {fileID: 492440804577196729, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorD
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6856e665c299f634cbbc28315c044dec,
         type: 3}
       propertyPath: m_Name
       value: RuneMirrors
+      objectReference: {fileID: 0}
+    - target: {fileID: 3082430339607902213, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorGearsA
+      objectReference: {fileID: 0}
+    - target: {fileID: 5837523472550796488, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorE
+      objectReference: {fileID: 0}
+    - target: {fileID: 6335250783087129314, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorB
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806708169297508064, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorI
+      objectReference: {fileID: 0}
+    - target: {fileID: 7959026430977397170, guid: 6856e665c299f634cbbc28315c044dec,
+        type: 3}
+      propertyPath: m_Name
+      value: MirrorF
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
