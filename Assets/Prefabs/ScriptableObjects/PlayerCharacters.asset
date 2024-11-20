@@ -14,14 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCharacters:
   - character: 0
-    height: 5
+    height: 4
     width: 1
   - character: 1
-    height: 6
+    height: 4.5
     width: 1
   - character: 2
     height: 3
     width: 1
   - character: 3
-    height: 7
-    width: 2
+    height: 3.5
+    width: 1
