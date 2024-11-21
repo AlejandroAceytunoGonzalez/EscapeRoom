@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Random = UnityEngine.Random;
 using UnityEngine.Events;
 using System.Collections;
+using System.Linq;
 public class SimonSays : MonoBehaviour
 {
     private List<SimonRune> simonRunes = new List<SimonRune>();
 
     [SerializeField] private int simonStepsCount = 10;
     [SerializeField] private float displayCooldown = 0.5f;
+    [SerializeField] private ParticleSystem fireOrb;
     private List<int> sequenceIndexes = new List<int>();
     private int currentStep = 0;
 
@@ -33,16 +35,28 @@ public class SimonSays : MonoBehaviour
     private void GenerateSequence()
     {
         sequenceIndexes.Clear();
+        List<int> availableIndices = Enumerable.Range(0, simonRunes.Count).ToList();
         for (int i = 0; i < simonStepsCount; i++)
         {
-            int randomIndex = Random.Range(0, simonRunes.Count);
-            sequenceIndexes.Add(randomIndex);
+            if (availableIndices.Count == 0)
+            {
+                return;
+            }
+            int randomIndex = Random.Range(0, availableIndices.Count);
+            sequenceIndexes.Add(availableIndices[randomIndex]);
+            availableIndices.RemoveAt(randomIndex);
         }
     }
     public void StartNewGame()
     {
         currentStep = 0;
         GenerateSequence();
+        StartCoroutine(DisplaySequence());
+    }
+    public void ManualDisplay()
+    {
+        isGameActive = false;
+        StopAllCoroutines();
         StartCoroutine(DisplaySequence());
     }
     private IEnumerator DisplaySequence()
@@ -52,7 +66,8 @@ public class SimonSays : MonoBehaviour
             {
                 int index = sequenceIndexes[i];
                 SimonRune rune = simonRunes[index];
-                rune.Display();
+                var fireOrbMain = fireOrb.main;
+                fireOrbMain.startColor = rune.Display();
                 yield return new WaitForSeconds(displayCooldown);
             }
         }
@@ -68,11 +83,15 @@ public class SimonSays : MonoBehaviour
             currentStep++;
             if (currentStep >= sequenceIndexes.Count)
             {
+                var fireOrbMain = fireOrb.main;
+                fireOrbMain.startColor = rune.Display();
                 rune.WinEffect();
                 OnWin();
             }
             else
             {
+                var fireOrbMain = fireOrb.main;
+                fireOrbMain.startColor = rune.Display();
                 rune.CorrectEffect();
             }
         }
