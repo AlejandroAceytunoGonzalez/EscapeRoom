@@ -1334,6 +1334,12 @@ Transform:
   - {fileID: 1125834496}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &804165369 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -2513435912702877575, guid: 012503bd169b3d7468af8f7289776403,
+    type: 3}
+  m_PrefabInstance: {fileID: 757326067}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &814015329
 GameObject:
   m_ObjectHideFlags: 0
@@ -25602,7 +25608,8 @@ ParticleSystem:
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
-    m_Planes: []
+    m_Planes:
+    - {fileID: 804165369}
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
@@ -45256,7 +45263,8 @@ ParticleSystem:
     multiplyColliderForceByParticleSize: 0
     multiplyColliderForceByParticleSpeed: 0
     multiplyColliderForceByCollisionAngle: 1
-    m_Planes: []
+    m_Planes:
+    - {fileID: 804165369}
     m_Dampen:
       serializedVersion: 2
       minMaxState: 0
