@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoveAndDestroy : MonoBehaviour
 {
     // Speed of the object
-    public float moveSpeed = 100f;
+    public float moveSpeed = 30f;
 
     // Lifetime of the object in seconds (to prevent it from persisting too long)
     public float lifetime = 5f;
@@ -19,7 +19,7 @@ public class MoveAndDestroy : MonoBehaviour
     private void Update()
     {
         // Move the object forward based on its local forward direction
-        transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision collision)
