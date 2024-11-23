@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ToggleParticleStateb : MonoBehaviour
@@ -9,6 +7,8 @@ public class ToggleParticleStateb : MonoBehaviour
     // References to the ParticleSystems
     public ParticleSystem particleSystemSuck;
     public ParticleSystem particleSystemPoof;
+
+    public MissileSpawner missileSpawner;
 
     // Track the current state (true = active, false = inactive)
     private bool isActive = false;
@@ -45,6 +45,7 @@ public class ToggleParticleStateb : MonoBehaviour
     {
         if (isActive) // Check if currently active
         {
+            missileSpawner.SpawnMissile(transform);
             particleSystemSuck.Stop();
             particleSystemPoof.Play();
             isActive = false; // Set state to inactive
