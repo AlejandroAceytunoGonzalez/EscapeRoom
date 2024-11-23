@@ -25,13 +25,6 @@ public class MissileSpawner : MonoBehaviour
 
             // Instantiate the missile
             GameObject missile = Instantiate(magicMissile, spawnPosition, callerTransform.rotation);
-
-            // Apply forward velocity to the missile
-            Rigidbody missileRigidbody = missile.GetComponent<Rigidbody>();
-            if (missileRigidbody != null)
-            {
-                missileRigidbody.velocity = callerTransform.forward * missileSpeed;
-            }
         }
         else
         {

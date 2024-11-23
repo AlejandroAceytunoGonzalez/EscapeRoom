@@ -19,24 +19,19 @@ public class MoveAndDestroy : MonoBehaviour
     private void Update()
     {
         // Move the object forward based on its local forward direction
-        transform.Translate(Vector3.left * moveSpeed * Time.deltaTime);
+        transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
     }
-
+/*
     private void OnCollisionEnter(Collision collision)
     {
         // Destroy the object when it collides with anything
         Destroy(gameObject);
-
-        // Optional: Add effects or logic here, like an explosion
-        Debug.Log($"Missile collided with {collision.gameObject.name} and destroyed itself.");
     }
 
     private void OnTriggerEnter(Collider other)
     {
         // Optional: If using triggers instead of collisions
         Destroy(gameObject);
-
-        // Optional: Add effects or logic here, like an explosion
-        Debug.Log($"Missile triggered by {other.gameObject.name} and destroyed itself.");
     }
+*/
 }
