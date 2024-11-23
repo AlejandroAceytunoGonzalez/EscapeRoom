@@ -5,9 +5,17 @@ using UnityEngine;
 public class SimonRune : MonoBehaviour
 {
     [SerializeField] private Animator animator;
+    [SerializeField] private Renderer rendererButton;
+    [SerializeField, ColorUsage(true, true)] Color wrongColor;
+    [SerializeField, ColorUsage(true, true)] private Color correctColor;
+    [SerializeField, ColorUsage(true, true)] private Color winColor;
     [SerializeField] private ParticleSystem displayEffect;
     [SerializeField] private float effectDuration = 0.3f;
 
+    private void Awake()
+    {
+        Reset();
+    }
     public void Push(bool isGameActive)
     {
         if (isGameActive)
@@ -26,17 +34,21 @@ public class SimonRune : MonoBehaviour
     }
     public void CorrectEffect()
     {
-
+        rendererButton.material.SetColor("_EmissionColor", correctColor);
     }
 
     public void LoseEffect()
     {
-
+        rendererButton.material.SetColor("_EmissionColor", wrongColor);
     }
 
     public void WinEffect()
     {
-
+        rendererButton.material.SetColor("_EmissionColor", winColor);
+    }
+    public void Reset()
+    {
+        rendererButton.material.SetColor("_EmissionColor", Color.black);
     }
 
     private IEnumerator DeactivateAfterDelay(GameObject effect, float delay)

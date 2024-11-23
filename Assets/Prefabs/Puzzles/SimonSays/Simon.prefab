@@ -57,7 +57,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   simonStepsCount: 10
-  displayCooldown: 0.5
+  displayCooldown: 1.5
+  fireOrb: {fileID: 0}
 --- !u!65 &5039679146437290777
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -107,7 +108,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   type: 0
-  interactionCooldown: 5
+  interactionCooldown: 12
 --- !u!1001 &104832120699308743
 PrefabInstance:
   m_ObjectHideFlags: 0

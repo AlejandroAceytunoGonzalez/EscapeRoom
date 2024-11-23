@@ -13,6 +13,7 @@ public class SimonSays : MonoBehaviour
     [SerializeField] private ParticleSystem fireOrb;
     private List<int> sequenceIndexes = new List<int>();
     private int currentStep = 0;
+    private bool wrongRefresh;
 
     public bool isGameActive { get; private set; } = false;
 
@@ -71,6 +72,14 @@ public class SimonSays : MonoBehaviour
                 yield return new WaitForSeconds(displayCooldown);
             }
         }
+        if (wrongRefresh)
+        {
+            wrongRefresh = false;
+            foreach (SimonRune rune in simonRunes)
+            {
+                rune.Reset();
+            }
+        }
         isGameActive = true;
     }
 
@@ -85,7 +94,10 @@ public class SimonSays : MonoBehaviour
             {
                 var fireOrbMain = fireOrb.main;
                 fireOrbMain.startColor = rune.Display();
-                rune.WinEffect();
+                foreach (SimonRune rune2 in simonRunes)
+                {
+                    rune2.WinEffect();
+                }
                 OnWin();
             }
             else
@@ -97,7 +109,6 @@ public class SimonSays : MonoBehaviour
         }
         else
         {
-            rune.LoseEffect();
             OnLoss();
         }
     }
@@ -105,6 +116,12 @@ public class SimonSays : MonoBehaviour
     private void OnLoss()
     {
         isGameActive = false;
+        foreach (SimonRune rune in simonRunes)
+        {
+            rune.LoseEffect();
+        }
+        wrongRefresh = true;
+        StartNewGame();
     }
 
     private void OnWin()
