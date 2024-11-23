@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float eyeLevelOffset = -1;
     [SerializeField] private GrassInteractor grassInteractor;
     [SerializeField] private float grassInteractorWidthOffset = 1;
-    public Character playerCharacter { get; private set; } = Character.Rogue;
+    [field: SerializeField] public Character playerCharacter { get; private set; } = Character.Rogue;
     public static event Action<Character> OnCharacterChange;
 
     [SerializeField] private float speed = 5f;
