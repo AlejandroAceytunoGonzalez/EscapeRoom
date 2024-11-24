@@ -11,6 +11,7 @@ public class SimonSays : MonoBehaviour
     [SerializeField] private int simonStepsCount = 10;
     [SerializeField] private float displayCooldown = 0.5f;
     [SerializeField] private ParticleSystem fireOrb;
+    [SerializeField] private Light orbLight;
     private List<int> sequenceIndexes = new List<int>();
     private int currentStep = 0;
     private bool wrongRefresh;
@@ -67,8 +68,10 @@ public class SimonSays : MonoBehaviour
             {
                 int index = sequenceIndexes[i];
                 SimonRune rune = simonRunes[index];
-                var fireOrbMain = fireOrb.main;
-                fireOrbMain.startColor = rune.Display();
+                ParticleSystemRenderer renderer = fireOrb.GetComponent<ParticleSystemRenderer>();
+                Color color = rune.Display();
+                renderer.material.SetColor("_EmissionColor", color * 3);
+                orbLight.color = color;
                 yield return new WaitForSeconds(displayCooldown);
             }
         }
@@ -92,8 +95,10 @@ public class SimonSays : MonoBehaviour
             currentStep++;
             if (currentStep >= sequenceIndexes.Count)
             {
-                var fireOrbMain = fireOrb.main;
-                fireOrbMain.startColor = rune.Display();
+                ParticleSystemRenderer renderer = fireOrb.GetComponent<ParticleSystemRenderer>();
+                Color color = rune.Display();
+                renderer.material.SetColor("_EmissionColor", color * 3);
+                orbLight.color = color;
                 foreach (SimonRune rune2 in simonRunes)
                 {
                     rune2.WinEffect();
@@ -102,8 +107,10 @@ public class SimonSays : MonoBehaviour
             }
             else
             {
-                var fireOrbMain = fireOrb.main;
-                fireOrbMain.startColor = rune.Display();
+                ParticleSystemRenderer renderer = fireOrb.GetComponent<ParticleSystemRenderer>();
+                Color color = rune.Display();
+                renderer.material.SetColor("_EmissionColor", color * 3);
+                orbLight.color = color;
                 rune.CorrectEffect();
             }
         }
