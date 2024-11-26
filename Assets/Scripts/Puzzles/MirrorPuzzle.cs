@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class MirrorPuzzle : MonoBehaviour
 {
@@ -56,6 +57,7 @@ public class MirrorPuzzle : MonoBehaviour
 
     public void CheckMirrors()
     {
+        UpdateGears();
         bool solution1 = mirrorBools.SequenceEqual(mirrorCombination1);
         bool solution2 = mirrorBools.SequenceEqual(mirrorCombination2);
         bool solution3 = mirrorBools.SequenceEqual(mirrorCombination3);
@@ -80,6 +82,22 @@ public class MirrorPuzzle : MonoBehaviour
 
 
             GameManager.Instance.Solve(Character.Cleric);
+        }
+    }
+
+    private void UpdateGears()
+    {
+        foreach (Animator gear in gears)
+        {
+            int randomState = Random.Range(0, 3);
+            if (randomState == 0)
+            {
+                gear.SetTrigger("ClockWise");
+            }
+            else if (randomState == 1)
+            {
+                gear.SetTrigger("CounterClockWise");
+            }
         }
     }
 }

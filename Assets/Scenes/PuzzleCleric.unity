@@ -26707,6 +26707,7 @@ GameObject:
   - component: {fileID: 7413566438340980332}
   - component: {fileID: 9070134751287134552}
   - component: {fileID: 4750287018579222991}
+  - component: {fileID: 9070134751287134553}
   m_Layer: 0
   m_Name: MirrorGears.009
   m_TagString: Untagged
@@ -26967,6 +26968,7 @@ GameObject:
   - component: {fileID: 8790660081501594586}
   - component: {fileID: 3880818873259105305}
   - component: {fileID: 3357736511935913312}
+  - component: {fileID: 8790660081501594587}
   m_Layer: 0
   m_Name: MirrorGears.004
   m_TagString: Untagged
@@ -28129,6 +28131,7 @@ GameObject:
   - component: {fileID: 8543609324850666064}
   - component: {fileID: 3816449307802964263}
   - component: {fileID: 3031202027018215259}
+  - component: {fileID: 8543609324850666065}
   m_Layer: 0
   m_Name: MirrorGearsB
   m_TagString: Untagged
@@ -28440,6 +28443,7 @@ GameObject:
   - component: {fileID: 3454584438858261400}
   - component: {fileID: 3437264410221868283}
   - component: {fileID: 6206797895193902520}
+  - component: {fileID: 6206797895193902521}
   m_Layer: 0
   m_Name: MirrorGears.003
   m_TagString: Untagged
@@ -28984,6 +28988,7 @@ GameObject:
   - component: {fileID: 702117913468620109}
   - component: {fileID: 991147676192808159}
   - component: {fileID: 26553084091731610}
+  - component: {fileID: 4716861591880271733}
   m_Layer: 0
   m_Name: MirrorGears.005
   m_TagString: Untagged
@@ -28991,6 +28996,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &4716861591880271733
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4716861591880271732}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!23 &4750287018579222991
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -29299,6 +29325,7 @@ GameObject:
   - component: {fileID: 8386725045449220487}
   - component: {fileID: 7941425422109372710}
   - component: {fileID: 1399551659383103628}
+  - component: {fileID: 8386725045449220488}
   m_Layer: 0
   m_Name: MirrorGears.006
   m_TagString: Untagged
@@ -34384,6 +34411,27 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!95 &6206797895193902521
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4179700244388810004}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &6268393387576404740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34865,6 +34913,7 @@ GameObject:
   - component: {fileID: 8524785597132276054}
   - component: {fileID: 1339866298846688936}
   - component: {fileID: 554098680207120589}
+  - component: {fileID: 8524785597132276055}
   m_Layer: 0
   m_Name: MirrorGears.008
   m_TagString: Untagged
@@ -40129,6 +40178,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 910555317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8386725045449220488
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5370935242650610168}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &8473997944054640072
 GameObject:
   m_ObjectHideFlags: 0
@@ -40162,6 +40232,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 910555317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8524785597132276055
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7071492418380444687}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8543609324850666064
 Transform:
   m_ObjectHideFlags: 0
@@ -40177,6 +40268,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 910555317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8543609324850666065
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3143906410875902007}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8592035111446931848
 Transform:
   m_ObjectHideFlags: 0
@@ -45076,6 +45188,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 910555317}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &8790660081501594587
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413165856564035319}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &9007255385353626966
 GameObject:
   m_ObjectHideFlags: 0
@@ -45087,6 +45220,7 @@ GameObject:
   - component: {fileID: 1915269969886458815}
   - component: {fileID: 8293505071178870577}
   - component: {fileID: 4129801122514336911}
+  - component: {fileID: 9007255385353626967}
   m_Layer: 0
   m_Name: MirrorGears.007
   m_TagString: Untagged
@@ -45094,6 +45228,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &9007255385353626967
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9007255385353626966}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!33 &9070134751287134552
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -45102,6 +45257,27 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6642333927315620}
   m_Mesh: {fileID: -125625107636077216, guid: 6856e665c299f634cbbc28315c044dec, type: 3}
+--- !u!95 &9070134751287134553
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6642333927315620}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c57b408d00555614b87e0c2a25ef63ea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &9079451594971861591 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7300020976294001067, guid: 40a3727beb4ac9a4ca7316978f8dd7ef,
