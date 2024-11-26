@@ -8,7 +8,7 @@ using Random = UnityEngine.Random;
 public class MirrorPuzzle : MonoBehaviour
 {
     [SerializeField, ColorUsage(true, true)] private Color winColor;
-    [SerializeField] private GameObject mirrorsProyectionsParent;
+    [SerializeField] private GameObject mirrorsProjectionsParent;
     [SerializeField] private GameObject mirrorsSwitchesParent;
     [SerializeField] private GameObject gearsParent;
 
@@ -21,8 +21,9 @@ public class MirrorPuzzle : MonoBehaviour
     [SerializeField] private GameObject solution3Torch;
 
     List<bool> mirrorBools;
+    List<bool> mirrorStartBools;
     MirrorSwitch[] mirrorsSwitches;
-    MirrorSwitch[] mirrorProyections;
+    MirrorSwitch[] mirrorProjections;
     Animator[] gears;
 
     private void Awake()
@@ -30,13 +31,14 @@ public class MirrorPuzzle : MonoBehaviour
         mirrorBools = new List<bool>();
 
         mirrorsSwitches = mirrorsSwitchesParent.GetComponentsInChildren<MirrorSwitch>();
-        mirrorProyections = mirrorsProyectionsParent.GetComponentsInChildren<MirrorSwitch>();
+        mirrorProjections = mirrorsProjectionsParent.GetComponentsInChildren<MirrorSwitch>();
         gears = gearsParent.GetComponentsInChildren<Animator>();
 
         foreach (MirrorSwitch mirrorSwitch in mirrorsSwitches)
         {
             mirrorBools.Add(mirrorSwitch.isActivated);
         }
+        mirrorStartBools = new List<bool>(mirrorBools);
 
         AdjustListSize(mirrorCombination1, mirrorBools.Count);
         AdjustListSize(mirrorCombination2, mirrorBools.Count);
@@ -52,7 +54,7 @@ public class MirrorPuzzle : MonoBehaviour
     {
         mirrorBools[index] = !mirrorBools[index];
         mirrorsSwitches[index].SetActivated(mirrorBools[index]);
-        mirrorProyections[index].SetActivated(mirrorBools[index]);
+        mirrorProjections[index].SetActivated(mirrorBools[index]);
     }
 
     public void CheckMirrors()
@@ -99,5 +101,16 @@ public class MirrorPuzzle : MonoBehaviour
                 gear.SetTrigger("CounterClockWise");
             }
         }
+    }
+    public void ResetMirrors()
+    {
+        mirrorBools = new List<bool>(mirrorStartBools);
+        for (int i = 0; i < mirrorsSwitches.Length; i++)
+        {
+            MirrorSwitch mirror = mirrorsSwitches[i];
+            MirrorSwitch mirrorProjection = mirrorProjections[i];
+            mirror.SetActivated(mirrorBools[i]);
+        }
+        UpdateGears();
     }
 }
