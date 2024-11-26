@@ -110,6 +110,7 @@ public class MirrorPuzzle : MonoBehaviour
             MirrorSwitch mirror = mirrorsSwitches[i];
             MirrorSwitch mirrorProjection = mirrorProjections[i];
             mirror.SetActivated(mirrorBools[i]);
+            mirrorProjection.SetActivated(mirrorBools[i]);
         }
         UpdateGears();
     }
