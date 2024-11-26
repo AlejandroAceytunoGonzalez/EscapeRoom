@@ -12,6 +12,7 @@ public class MirrorPuzzle : MonoBehaviour
     [SerializeField] private GameObject gearsParent;
 
     [SerializeField] private List<bool> mirrorCombination1;
+    [SerializeField] private List<bool> mirrorCombination1_2;
     [SerializeField] private List<bool> mirrorCombination2;
     [SerializeField] private List<bool> mirrorCombination3;
 
@@ -57,6 +58,7 @@ public class MirrorPuzzle : MonoBehaviour
     public void CheckMirrors()
     {
         bool solution1 = mirrorBools.SequenceEqual(mirrorCombination1);
+        solution1 = solution1 || mirrorBools.SequenceEqual(mirrorCombination1_2);
         bool solution2 = mirrorBools.SequenceEqual(mirrorCombination2);
         bool solution3 = mirrorBools.SequenceEqual(mirrorCombination3);
 
