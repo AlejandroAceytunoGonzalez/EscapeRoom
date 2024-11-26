@@ -46,17 +46,10 @@ namespace ProceduralGrass
 
         private void Awake()
         {
-            if (Instance == null)
-            {
-                Instance = this;
-                windValuesBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, 1, 7 * sizeof(float));
-                UpdateBuffer();
-                DontDestroyOnLoad(gameObject);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            Instance = this;
+            windValuesBuffer = new GraphicsBuffer(GraphicsBuffer.Target.Structured, 1, 7 * sizeof(float));
+            UpdateBuffer();
+            //DontDestroyOnLoad(gameObject);
         }
         private void OnValidate()
         {

@@ -107,6 +107,12 @@ public class PlayerController : MonoBehaviour
         playerCharacter = character;
         UpdateCharacter();
     }
+    public void SetRotPov(float rotationPov)
+    {
+        CinemachineVirtualCamera camera = FindObjectOfType<CinemachineVirtualCamera>(true);
+        CinemachinePOV povComponent = camera.GetCinemachineComponent<CinemachinePOV>();
+        povComponent.m_HorizontalAxis.Value = rotationPov;
+    }
 
     private void UpdateCharacter()
     {

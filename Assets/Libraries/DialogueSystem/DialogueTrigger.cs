@@ -15,4 +15,8 @@ public class DialogueTrigger : MonoBehaviour
     {
         DialogueCanvas.Instance.StartDialogue(knotName,textDisplay,optionsDisplay,choiceEvents, onStartEvent, onCloseEvent);
     }
+    public void DialogueStart(string knotName)
+    {
+        DialogueCanvas.Instance.StartDialogue(knotName, textDisplay, optionsDisplay, choiceEvents, onStartEvent, onCloseEvent);
+    }
 }

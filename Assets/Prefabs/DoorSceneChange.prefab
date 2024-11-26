@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 5129331591712331864}
   - component: {fileID: 7282999172862271812}
   - component: {fileID: 2528713221055563108}
-  - component: {fileID: 2987193422775517628}
+  - component: {fileID: 3363081289042143872}
+  - component: {fileID: 2365111134047194273}
+  - component: {fileID: 5152964793124246179}
   m_Layer: 0
   m_Name: DoorSceneChange
   m_TagString: Untagged
@@ -70,21 +72,21 @@ MonoBehaviour:
   unityEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2987193422775517628}
-        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
-        m_MethodName: ChangeScene
-        m_Mode: 5
+      - m_Target: {fileID: 3363081289042143872}
+        m_TargetAssemblyTypeName: DoorLogic, Assembly-CSharp
+        m_MethodName: TryDoor
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: PuzzleRogue
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
   type: 2
   interactionCooldown: -1
---- !u!114 &2987193422775517628
+--- !u!114 &3363081289042143872
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,6 +95,86 @@ MonoBehaviour:
   m_GameObject: {fileID: 3635444050428488201}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6046f40d99f28fb4b8ba7c66f0e6cedf, type: 3}
+  m_Script: {fileID: 11500000, guid: 551e6d0341c3cb549a9e36241cf22629, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hasRestrictions: 1
+  sceneName: PuzzleRogue
+  destinationPos: {x: 0, y: 0, z: 0}
+  destinationRotationPov: 0
+  assignedCharacter: 0
+  wrongCharacterKnot: PuzzleRogueWrongCharacter
+  alreadySolvedKnot: PuzzleRogueSolvedAlready
+  afterDialogueCooldown: 1
+--- !u!114 &2365111134047194273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635444050428488201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6c8a1b5c176cd43a432e1d21e87d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 4314897650414003948, guid: f038212bda873ef49b34e298d8b3d47c,
+    type: 3}
+  optionsDisplay: {fileID: 1108059043822317018, guid: 08d2ca844346bb24581eabca407647dc,
+    type: 3}
+  knotName: 
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5152964793124246179}
+        m_TargetAssemblyTypeName: BlockInput, Assembly-CSharp
+        m_MethodName: SetPlayerInput
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCloseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5152964793124246179}
+        m_TargetAssemblyTypeName: BlockInput, Assembly-CSharp
+        m_MethodName: SetPlayerInput
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 3363081289042143872}
+        m_TargetAssemblyTypeName: DoorLogic, Assembly-CSharp
+        m_MethodName: TryDoorReset
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  choiceEvents: []
+--- !u!114 &5152964793124246179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3635444050428488201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e963477d746e045ae26a5a302522cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

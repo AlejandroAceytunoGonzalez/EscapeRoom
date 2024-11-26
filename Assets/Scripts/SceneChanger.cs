@@ -7,12 +7,12 @@ public class SceneChanger : MonoBehaviour
 {
     private LoadingScreen loadingScreen;
 
-    public void ChangeScene(string sceneName)
+    public void ChangeScene(string sceneName, Character character, Vector3 pos, float rotationPov)
     {
         loadingScreen = FindObjectOfType<LoadingScreen>();
-        StartCoroutine(LoadSceneAsync(sceneName));
+        StartCoroutine(LoadSceneAsync(sceneName, character, pos, rotationPov));
     }
-    private IEnumerator LoadSceneAsync(string sceneName)
+    private IEnumerator LoadSceneAsync(string sceneName, Character character, Vector3 pos, float rotationPov)
     {
         loadingScreen.StartLoading();
         AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
@@ -27,5 +27,10 @@ public class SceneChanger : MonoBehaviour
             }
             yield return null;
         }
+        yield return new WaitForEndOfFrame();
+        PlayerController player = FindObjectOfType<PlayerController>();
+        player.SetCharacter(character);
+        player.SetRotPov(rotationPov);
+        player.transform.position = pos;
     }
 }

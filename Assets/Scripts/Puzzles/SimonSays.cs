@@ -99,10 +99,6 @@ public class SimonSays : MonoBehaviour
                 Color color = rune.Display();
                 renderer.material.SetColor("_EmissionColor", color * 3);
                 orbLight.color = color;
-                foreach (SimonRune rune2 in simonRunes)
-                {
-                    rune2.WinEffect();
-                }
                 OnWin();
             }
             else
@@ -134,5 +130,10 @@ public class SimonSays : MonoBehaviour
     private void OnWin()
     {
         isGameActive = false;
+        foreach (SimonRune rune in simonRunes)
+        {
+            rune.WinEffect();
+        }
+        GameManager.Instance.Solve(Character.Mage);
     }
 }
