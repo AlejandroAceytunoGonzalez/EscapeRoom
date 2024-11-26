@@ -27789,11 +27789,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
         type: 3}
-      propertyPath: mirrorCombination1_2.Array.size
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
-        type: 3}
       propertyPath: mirrorCombination1.Array.data[0]
       value: 1
       objectReference: {fileID: 0}
@@ -27840,26 +27835,6 @@ PrefabInstance:
     - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
         type: 3}
       propertyPath: mirrorCombination3.Array.data[4]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
-        type: 3}
-      propertyPath: mirrorCombination1_2.Array.data[0]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
-        type: 3}
-      propertyPath: mirrorCombination1_2.Array.data[1]
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
-        type: 3}
-      propertyPath: mirrorCombination1_2.Array.data[5]
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6632996605498486931, guid: bc5578cc0e7914e458219b09c7b95468,
-        type: 3}
-      propertyPath: mirrorCombination1_2.Array.data[8]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8030526446353490374, guid: bc5578cc0e7914e458219b09c7b95468,
