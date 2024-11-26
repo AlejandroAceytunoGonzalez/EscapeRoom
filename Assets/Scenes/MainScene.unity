@@ -1264,54 +1264,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1598318058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &552175873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8858362113743121823, guid: 8ea169db28aeed64687d870ae4be9072,
-    type: 3}
-  m_PrefabInstance: {fileID: 1345581816}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &552175875
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552175873}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 449.0916, y: 388.46973, z: 393.52826}
-  m_Center: {x: -311.1173, y: -269.8807, z: 6.0090785}
---- !u!65 &552175878
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 552175873}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 515.3568, y: 474.98962, z: 393.52826}
-  m_Center: {x: 2058.566, y: 576.2049, z: 6.0090785}
 --- !u!1 &615838507
 GameObject:
   m_ObjectHideFlags: 0
@@ -6768,7 +6720,7 @@ PrefabInstance:
     - target: {fileID: 3504785718341483804, guid: 3fa0ddf8bc07e3b4b92e4953a5b31942,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.87
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3504785718341483804, guid: 3fa0ddf8bc07e3b4b92e4953a5b31942,
         type: 3}
@@ -7793,15 +7745,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8858362113743121823, guid: 8ea169db28aeed64687d870ae4be9072,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 552175875}
-    - targetCorrespondingSourceObject: {fileID: 8858362113743121823, guid: 8ea169db28aeed64687d870ae4be9072,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 552175878}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ea169db28aeed64687d870ae4be9072, type: 3}
 --- !u!1 &1405494163
 GameObject:
@@ -13341,7 +13285,6 @@ GameObject:
   - component: {fileID: 1883787880}
   - component: {fileID: 1883787879}
   - component: {fileID: 1883787878}
-  - component: {fileID: 1883787881}
   m_Layer: 0
   m_Name: Torches.002
   m_TagString: Untagged
@@ -13415,27 +13358,6 @@ Transform:
   - {fileID: 5987572887051520792}
   m_Father: {fileID: 5075547691022748527}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!65 &1883787881
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1883787877}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.0000005, y: 4.483014, z: 2.441218}
-  m_Center: {x: -0.000001907349, y: -0.5745454, z: 5.714811}
 --- !u!1 &1891366084
 GameObject:
   m_ObjectHideFlags: 0
@@ -13913,7 +13835,6 @@ GameObject:
   - component: {fileID: 7672539521830141635}
   - component: {fileID: 9096519324727928418}
   - component: {fileID: 2553939766931144117}
-  - component: {fileID: 9096519324727928419}
   m_Layer: 0
   m_Name: Torches
   m_TagString: Untagged
@@ -24357,7 +24278,6 @@ GameObject:
   - component: {fileID: 4577757744738889756}
   - component: {fileID: 4222366496156353729}
   - component: {fileID: 250061478733963399}
-  - component: {fileID: 7010964209020147124}
   m_Layer: 0
   m_Name: Torches.003
   m_TagString: Untagged
@@ -24365,27 +24285,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!65 &7010964209020147124
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7010964209020147123}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.000001, y: 4.483015, z: 2.4412181}
-  m_Center: {x: -0.0000017374216, y: -0.5745454, z: -1.4647409}
 --- !u!1 &7617522483211644378
 GameObject:
   m_ObjectHideFlags: 0
@@ -34233,27 +34132,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721979398800488563}
   m_Mesh: {fileID: -2171699174094403140, guid: aa47c98c6c26395498eb4f200e5fd86d, type: 3}
---- !u!65 &9096519324727928419
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 721979398800488563}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 2.0000005, y: 4.483014, z: 2.441218}
-  m_Center: {x: -0.000001907349, y: -0.5745454, z: 2.117745}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
