@@ -52,10 +52,9 @@ public class MirrorPuzzle : MonoBehaviour
         mirrorBools[index] = !mirrorBools[index];
         mirrorsSwitches[index].SetActivated(mirrorBools[index]);
         mirrorProyections[index].SetActivated(mirrorBools[index]);
-        CheckMirrors();
     }
 
-    private void CheckMirrors()
+    public void CheckMirrors()
     {
         bool solution1 = mirrorBools.SequenceEqual(mirrorCombination1);
         bool solution2 = mirrorBools.SequenceEqual(mirrorCombination2);
