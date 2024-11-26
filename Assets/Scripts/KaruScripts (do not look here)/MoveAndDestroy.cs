@@ -27,11 +27,13 @@ public class MoveAndDestroy : MonoBehaviour
         // Destroy the object when it collides with anything
         Destroy(gameObject);
     }
-
+*/
     private void OnTriggerEnter(Collider other)
     {
-        // Optional: If using triggers instead of collisions
-        Destroy(gameObject);
+        if (other.CompareTag("ProyectileObstacle"))
+        {
+            // Optional: If using triggers instead of collisions
+            Destroy(gameObject);
+        }
     }
-*/
 }
