@@ -124,7 +124,7 @@ public class PlayerController : MonoBehaviour
         capsuleCollider.radius = characterWidth;
         capsuleCollider.center = new Vector3(0,characterHeight/2,0);
         eyeLevelTransform.localPosition = new Vector3(0, characterHeight + eyeLevelOffset, 0);
-        grassInteractor.SetRadius(characterWidth + characterWidth);
+        grassInteractor.SetRadius(characterWidth + grassInteractorWidthOffset);
     }
 
     private void OnTriggerEnter(Collider other)

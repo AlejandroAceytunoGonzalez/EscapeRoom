@@ -10,7 +10,6 @@ public class SimonRune : MonoBehaviour
     [SerializeField, ColorUsage(true, true)] private Color correctColor;
     [SerializeField, ColorUsage(true, true)] private Color winColor;
     [SerializeField] private ParticleSystem displayEffect;
-    [SerializeField] private float effectDuration = 0.3f;
 
     private void Awake()
     {
