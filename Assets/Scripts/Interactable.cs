@@ -42,9 +42,9 @@ public class Interactable : MonoBehaviour
     {
         if (type == InteractableType.Manual) Interact();
     }
-    public void DialogueInteract()
+    public void CodeInteract()
     {
-        if (type == InteractableType.Dialogue) Interact();
+        if (type == InteractableType.Code) Interact();
     }
     public void OnTriggerEnterInteract()
     {
@@ -63,7 +63,7 @@ public class Interactable : MonoBehaviour
 public enum InteractableType
 {
     Manual,
-    Dialogue,
+    Code,
     OnTriggerEnter,
     OnDisable,
     OnEnable,
