@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8030526446353490374}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44,6 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1af2c8e0b6b26f41b8f2e4b57009204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  solution1: {fileID: 0}
-  solution2: {fileID: 0}
-  solution3: {fileID: 0}
+  winColor: {r: 0.6258532, g: 2.027929, b: 0.23358345, a: 1}
+  mirrorsProjectionsParent: {fileID: 0}
+  mirrorsSwitchesParent: {fileID: 0}
+  gearsParent: {fileID: 0}
+  mirrorCombination1: 010100000001000001
+  mirrorCombination1_2: 010000000001000001
+  mirrorCombination2: 000100010000010000
+  mirrorCombination3: 000101000100000000
+  solution1Torch: {fileID: 0}
+  solution2Torch: {fileID: 0}
+  solution3Torch: {fileID: 0}
