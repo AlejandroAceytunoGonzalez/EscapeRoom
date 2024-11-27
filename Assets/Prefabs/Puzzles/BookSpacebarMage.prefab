@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 2718632928373594665}
   - component: {fileID: 2495898589288856222}
   - component: {fileID: 2951564322224483625}
+  - component: {fileID: 139064232400661418}
   m_Layer: 0
   m_Name: BookSpacebarMage
   m_TagString: Untagged
@@ -80,7 +81,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 098e70c3b71b45748b56bb0b158b093c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  book: {fileID: 0}
+  book: {fileID: 139064232400661418}
 --- !u!114 &2951564322224483625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,8 +109,29 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  type: 0
-  interactionCooldown: 7
+  type: 1
+  interactionCooldown: 1
+--- !u!95 &139064232400661418
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3207563903052940644}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c7944daf55ff50641ae6f8b82c3293e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &4211152503467279778
 GameObject:
   m_ObjectHideFlags: 0
