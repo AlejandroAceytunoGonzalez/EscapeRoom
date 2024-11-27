@@ -193,6 +193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f6044f40c1e2542b744f6b0b552a13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <DialogueCharacterSO>k__BackingField: {fileID: 11400000, guid: 616634773c4607d4cbf9086c004e05b9,
+    type: 2}
 --- !u!114 &3525902933418651287
 MonoBehaviour:
   m_ObjectHideFlags: 0

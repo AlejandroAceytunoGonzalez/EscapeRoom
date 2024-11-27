@@ -47,7 +47,7 @@ Huh, an array of glyph mirrors. These ruins must be from some religious group. #
 Normally you would use these as a password of sorts. It makes sure you are part of the group, as you would need to know the symbol to make. #Cleric
 It makes a nice tool, as it avoids having to draw and erase glyphs on the same space, along with the unsealing mechanism. #Cleric
 Well, let's check my book of lore, it should come in handy. [Spacebar] #Cleric
-I wonder which symbols are required here... Perhaps I should take a look around. #Cleric
+I wonder which symbols are required here... Perhaps I should also take a look around. #Cleric
     ->EndNode
 
 === PuzzleClericOloMask ===

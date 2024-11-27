@@ -1,11 +1,13 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class DialogueCanvas : MonoBehaviour
 {
     public static DialogueCanvas Instance { get; private set; }
+    [field: SerializeField] public DialogueCharacterSO DialogueCharacterSO { get; private set; }
 
     public event EventHandler OnDialogueCanvasActiveChange;
     private DialogueInkManager dialogueInk;
@@ -61,7 +63,12 @@ public class DialogueCanvas : MonoBehaviour
         optionsDisplay.gameObject.SetActive(true);
 
         optionsDisplay.setText(dialogueInk.GetCurrentText());
-        if (dialogueInk.GetCurrentTags().Count > 0) optionsDisplay.setTitle(dialogueInk.GetCurrentTags()[0]);
+        if (dialogueInk.GetCurrentTags().Count > 0)
+        {
+            string tag = dialogueInk.GetCurrentTags()[0];
+            optionsDisplay.setTitle(tag);
+            optionsDisplay.setImage(DialogueCharacterSO.DialogueCharacters.FirstOrDefault((def) => def.characterTag == tag).sprite);
+        }
         optionsDisplay.CreateOptions(e.choices, choiceEvents);
     }
 
@@ -69,7 +76,11 @@ public class DialogueCanvas : MonoBehaviour
     {
         textDisplay.gameObject.SetActive(true);
         textDisplay.setText(dialogueInk.GetCurrentText());
-        if (dialogueInk.GetCurrentTags().Count > 0) textDisplay.setTitle(dialogueInk.GetCurrentTags()[0]);
+        if (dialogueInk.GetCurrentTags().Count > 0) {
+            string tag = dialogueInk.GetCurrentTags()[0];
+            textDisplay.setTitle(tag);
+            textDisplay.setImage(DialogueCharacterSO.DialogueCharacters.FirstOrDefault((def) => def.characterTag == tag).sprite);
+        }
     }
 
     private void Ds_OnChosenChoice(object sender, System.EventArgs e)

@@ -23,7 +23,7 @@ public class DialogueSystemDisplay : MonoBehaviour
     }
     public void setImage(Sprite image)
     {
-        dialogueImage.sprite = image;
+        if (image != null) dialogueImage.sprite = image;
     }
     public void setTitle(string title)
     {
