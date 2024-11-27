@@ -45,6 +45,17 @@ Well, let's check my book of lore [spacebar]. #Cleric
 I wonder which ones are required here, perhaps I should look around. #Cleric
     ->EndNode
 
+=== PuzzleClericOloMask ===
+Oh, well that's unexpected, a mask of olo here... Lucky it was me who found it. #Cleric
+The others would have fallen for his aura. Thank you father of preservation for granting me your protection. #Cleric
+    ->EndNode
+=== PuzzleClericPermasMask ===
+A mask of... Is this Permas or was it Permut? No matter, the other is bound to be nearby. #Cleric
+    ->EndNode
+=== PuzzleClericPermutMask ===
+A mask of... Is this Permut or was it Permas? No matter, the other is bound to be nearby. #Cleric
+    ->EndNode
+
 === PuzzleBardFirstLoad ===
 My! My! What do we have here? #Bard
 I did not know we were in the fancy kind of decrepit ruins. If it isn't an orchestrion! #Bard

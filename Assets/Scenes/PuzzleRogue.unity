@@ -5855,6 +5855,24 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1041297905}
   m_SourcePrefab: {fileID: 100100000, guid: 8c76bbb3c3a70f54fb06a01adab9b374, type: 3}
+--- !u!1 &571965223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7440465354755954461, guid: e7698329152f68a4f82e7143d24adeb9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1028863903}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &571965227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571965223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b88491da72087b446a355bf084dc12a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &591909920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9865,7 +9883,7 @@ PrefabInstance:
         type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1223701644}
+      objectReference: {fileID: 0}
     - target: {fileID: 136017247026544081, guid: e7698329152f68a4f82e7143d24adeb9,
         type: 3}
       propertyPath: unityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -9949,7 +9967,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7440465354755954461, guid: e7698329152f68a4f82e7143d24adeb9,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 571965227}
   m_SourcePrefab: {fileID: 100100000, guid: e7698329152f68a4f82e7143d24adeb9, type: 3}
 --- !u!1 &1035344708 stripped
 GameObject:
@@ -11668,50 +11690,6 @@ ParticleSystem:
     type: 3}
   m_PrefabInstance: {fileID: 1511544849}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1223701642
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1223701643}
-  - component: {fileID: 1223701644}
-  m_Layer: 0
-  m_Name: RoomSolution
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1223701643
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223701642}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.3944451, y: -0.6817641, z: 93.95785}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1223701644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223701642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b88491da72087b446a355bf084dc12a6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1229870924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7691261905797079952, guid: 8c76bbb3c3a70f54fb06a01adab9b374,
@@ -21555,4 +21533,3 @@ SceneRoots:
   - {fileID: 184804872}
   - {fileID: 1938106038}
   - {fileID: 1028863903}
-  - {fileID: 1223701643}
