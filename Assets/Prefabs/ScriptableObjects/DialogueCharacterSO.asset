@@ -26,7 +26,7 @@ MonoBehaviour:
   - characterTag: Mage?
     sprite: {fileID: 21300000, guid: 1d39cb56da6e8354688b9f26f048fda7, type: 3}
   - characterTag: Cleric?
-    sprite: {fileID: 21300000, guid: 1f3d2720a4694e14f99d56a68eb0450d, type: 3}
+    sprite: {fileID: 21300000, guid: 4d419e0a2f4932540a471dcb84dc32c6, type: 3}
   - characterTag: Bard?
     sprite: {fileID: 21300000, guid: 7ad83f32222bd434e98197123fa1ae48, type: 3}
   - characterTag: Phractas
