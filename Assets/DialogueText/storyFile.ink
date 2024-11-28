@@ -2,7 +2,7 @@
     -> END
 
 
-=== MainSceneFirstLoad ===
+=== IntroScene ===
 Well, here we are, two days later and out of rations... But we made it. #Rogue
 Technically, we had food available. The lichens we found were edibl- #Mage
 EDIBLE MY ASS! That thing looked mushy and disgusting, ew! I prefer starving. #Rogue
@@ -15,7 +15,7 @@ Of course, of course, we are just doing... Archeological research. #Mage
 Yup. That's it, that sounds totally right. I'm not going to yoink anything at all. #Rogue
     ->EndNode
     
-=== MainCorridorFirstScene ===
+=== MainSceneFirstLoad ===
 Seems like the main door is sealed... But there are more paths to take. #Bard 
 So, four rooms... four of us. Simple math. #Mage
 Wait, how about we don't sp- #Rogue

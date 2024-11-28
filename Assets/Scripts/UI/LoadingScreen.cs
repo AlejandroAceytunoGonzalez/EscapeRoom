@@ -14,12 +14,14 @@ public class LoadingScreen : MonoBehaviour
 
     public void StartLoading()
     {
-        FindObjectOfType<PlayerController>().SetCanMove(false);
+        var playerController = FindObjectOfType<PlayerController>();
+        if (playerController != null) playerController.SetCanMove(false);
         loadingScreen.SetBool("isEnabled", true);
     }
     public void EndLoading()
     {
-        FindObjectOfType<PlayerController>().SetCanMove(true);
+        var playerController = FindObjectOfType<PlayerController>();
+        if (playerController != null) playerController.SetCanMove(true);
         loadingScreen.SetBool("isEnabled", false);
     }
 }
