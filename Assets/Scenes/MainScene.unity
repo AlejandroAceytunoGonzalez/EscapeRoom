@@ -15761,7 +15761,7 @@ Transform:
   m_GameObject: {fileID: 462907620}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.51, z: 0.05}
+  m_LocalPosition: {x: -0.03, y: 0.51, z: 0.97}
   m_LocalScale: {x: 0.32624307, y: 0.32573432, z: 0.08143358}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22310,7 +22310,7 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
         type: 3}
       propertyPath: m_Name
-      value: DoorGlyphFrame (4)
+      value: DoorGlyphFrame Lock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22319,8 +22319,18 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3556065}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1631443424}
   m_SourcePrefab: {fileID: 100100000, guid: bd8e8a5508b6b564f9736e92752f716f, type: 3}
+--- !u!1 &1300717541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1300717540}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1307517598
 GameObject:
   m_ObjectHideFlags: 0
@@ -33092,6 +33102,23 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1300717540}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1631443424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300717541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5784f4fb1fc1da84ea3439a284ab2083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particleSystemMage: {fileID: 2042694987}
+  particleSystemRogue: {fileID: 175638655}
+  particleSystemCleric: {fileID: 1421435365}
+  particleSystemBard: {fileID: 405802036}
+  particleSystemLock: {fileID: 3556067}
 --- !u!1 &1637580923
 GameObject:
   m_ObjectHideFlags: 0
@@ -33822,7 +33849,12 @@ PrefabInstance:
     - target: {fileID: 2374803691727585119, guid: d3d1e418dc96d774fb51579d43feecc8,
         type: 3}
       propertyPath: m_Size.y
-      value: 2.5561662
+      value: 2.3807888
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374803691727585119, guid: d3d1e418dc96d774fb51579d43feecc8,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.9629984
       objectReference: {fileID: 0}
     - target: {fileID: 2374803691727585119, guid: d3d1e418dc96d774fb51579d43feecc8,
         type: 3}
@@ -33832,7 +33864,12 @@ PrefabInstance:
     - target: {fileID: 2374803691727585119, guid: d3d1e418dc96d774fb51579d43feecc8,
         type: 3}
       propertyPath: m_Center.y
-      value: -0.095179796
+      value: -0.0074911118
+      objectReference: {fileID: 0}
+    - target: {fileID: 2374803691727585119, guid: d3d1e418dc96d774fb51579d43feecc8,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.4814992
       objectReference: {fileID: 0}
     - target: {fileID: 4900265513153142236, guid: d3d1e418dc96d774fb51579d43feecc8,
         type: 3}
@@ -33852,7 +33889,7 @@ PrefabInstance:
     - target: {fileID: 6579789635450575434, guid: d3d1e418dc96d774fb51579d43feecc8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.5
+      value: -7.17
       objectReference: {fileID: 0}
     - target: {fileID: 6579789635450575434, guid: d3d1e418dc96d774fb51579d43feecc8,
         type: 3}

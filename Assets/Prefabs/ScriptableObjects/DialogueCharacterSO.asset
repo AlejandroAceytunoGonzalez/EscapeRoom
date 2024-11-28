@@ -13,21 +13,21 @@ MonoBehaviour:
   m_Name: DialogueCharacterSO
   m_EditorClassIdentifier: 
   DialogueCharacters:
-  - characterTag: Rogue
+  - characterTag: Tristan
     sprite: {fileID: 21300000, guid: 8312448ee673abb42873d09d70e050bc, type: 3}
-  - characterTag: Mage
+  - characterTag: Vyrn
     sprite: {fileID: 21300000, guid: 3d82e2d08d601b744800b95e9a39e1a4, type: 3}
-  - characterTag: Cleric
+  - characterTag: Faelen
     sprite: {fileID: 21300000, guid: bb54b02d4847b534fbda7bac944cc92f, type: 3}
-  - characterTag: Bard
+  - characterTag: Cadenza
     sprite: {fileID: 21300000, guid: de6b71bdaa6650440a50aa11cd3e9733, type: 3}
-  - characterTag: Rogue?
+  - characterTag: Tristan?
     sprite: {fileID: 21300000, guid: 5f1c4d69ff6fcea4cb281e4feb0fbadf, type: 3}
-  - characterTag: Mage?
+  - characterTag: Vyrn?
     sprite: {fileID: 21300000, guid: 1d39cb56da6e8354688b9f26f048fda7, type: 3}
-  - characterTag: Cleric?
+  - characterTag: Faelen?
     sprite: {fileID: 21300000, guid: 4d419e0a2f4932540a471dcb84dc32c6, type: 3}
-  - characterTag: Bard?
+  - characterTag: Cadenza?
     sprite: {fileID: 21300000, guid: 7ad83f32222bd434e98197123fa1ae48, type: 3}
   - characterTag: Phractas
     sprite: {fileID: 21300000, guid: f73ca888778db5b4f926ca3c477686c0, type: 3}
