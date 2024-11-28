@@ -21115,6 +21115,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
+      propertyPath: isKiller
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
+        type: 3}
       propertyPath: hasRestrictions
       value: 0
       objectReference: {fileID: 0}
@@ -50730,6 +50735,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
+      propertyPath: isKiller
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
+        type: 3}
       propertyPath: hasRestrictions
       value: 0
       objectReference: {fileID: 0}
@@ -51297,6 +51307,112 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &1685823343
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1685823345}
+  - component: {fileID: 1685823344}
+  - component: {fileID: 1685823346}
+  - component: {fileID: 1685823347}
+  m_Layer: 0
+  m_Name: DeadDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1685823344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685823343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6c8a1b5c176cd43a432e1d21e87d7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textDisplay: {fileID: 4314897650414003948, guid: f038212bda873ef49b34e298d8b3d47c,
+    type: 3}
+  optionsDisplay: {fileID: 1108059043822317018, guid: 08d2ca844346bb24581eabca407647dc,
+    type: 3}
+  knotName: PuzzleRogueFirstDeath
+  onStartEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1685823347}
+        m_TargetAssemblyTypeName: BlockInput, Assembly-CSharp
+        m_MethodName: SetPlayerInput
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  onCloseEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1685823347}
+        m_TargetAssemblyTypeName: BlockInput, Assembly-CSharp
+        m_MethodName: SetPlayerInput
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  choiceEvents: []
+--- !u!4 &1685823345
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685823343}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1685823346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685823343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1be370aa8dd8e443bd1b6c4647535ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1685823347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1685823343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06e963477d746e045ae26a5a302522cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1688332296 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -1700743039553768228, guid: 8c76bbb3c3a70f54fb06a01adab9b374,
@@ -63738,6 +63854,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
+      propertyPath: isKiller
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
+        type: 3}
       propertyPath: hasRestrictions
       value: 0
       objectReference: {fileID: 0}
@@ -65051,3 +65172,4 @@ SceneRoots:
   - {fileID: 695304574}
   - {fileID: 41059656}
   - {fileID: 2096560086}
+  - {fileID: 1685823345}

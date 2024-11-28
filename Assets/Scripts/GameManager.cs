@@ -12,6 +12,10 @@ public class GameManager : MonoBehaviour
 
     private HashSet<string> visitedScenes = new HashSet<string>();
 
+    public bool hasDied;
+    public bool hasDiedAlready;
+    public bool hasSteppedPlate;
+
     public Dictionary<Character, bool> PuzzlesSolved { get; private set; } = new Dictionary<Character, bool>
     {
         { Character.Rogue, false },

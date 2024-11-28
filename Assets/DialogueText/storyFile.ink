@@ -36,6 +36,10 @@ Great. Pressure plates. Woohoo. #Tristan
  ... I really hope the rest of the group also have death traps and I wasn't the only one to get a densely packed with traps room. #Tristan
     ->EndNode
     
+=== PuzzleRogueFirstDeath ===
+Wopsies... #Tristan
+    ->EndNode
+    
 === LeverRogue ===
 Whoohoo! I made it! I finally reached the ominous lever! #Tristan
 Why the traps are still on...? #Tristan

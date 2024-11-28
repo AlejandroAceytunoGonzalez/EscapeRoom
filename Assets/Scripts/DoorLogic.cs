@@ -7,6 +7,7 @@ using UnityEngine;
 public class DoorLogic : MonoBehaviour
 {
     [SerializeField] private bool hasRestrictions = true;
+    [SerializeField] private bool isKiller = false;
     [SerializeField] private string sceneName;
     [SerializeField] private Vector3 destinationPos;
     [SerializeField] [Range(-180,180)] private float destinationRotationPov;
@@ -44,6 +45,7 @@ public class DoorLogic : MonoBehaviour
                 return;
             }
         }
+        if (isKiller) GameManager.Instance.hasDied = true;
         sceneChanger.ChangeScene(sceneName, player.playerCharacter , destinationPos, destinationRotationPov);
     }
     public void TryDoorReset()
