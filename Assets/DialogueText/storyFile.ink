@@ -45,20 +45,20 @@ I never quite bothered to learn rune reading by heart... #Mage
 === PuzzleClericFirstLoad ===
 Huh, an array of glyph mirrors. These ruins must be from some religious group. #Cleric
 Normally you would use these as a password of sorts. It makes sure you are part of the group, as you would need to know the symbol to make. #Cleric
-It makes a nice tool, as it avoids having to draw and erase glyphs on the same space, along with the unsealing mechanism. #Cleric
+It also makes a nice tool, as it avoids having to draw and erase glyphs on the same space, along with the unsealing mechanism. #Cleric
 Well, let's check my book of lore, it should come in handy. [Spacebar] #Cleric
-I wonder which symbols are required here... Perhaps I should also take a look around. #Cleric
+I wonder which symbols are required here... Perhaps I should take a look around. #Cleric
     ->EndNode
 
 === PuzzleClericOloMask ===
 Oh, well that's unexpected, a mask of Olo here... Lucky it was me who found it. I already feel dizzy... #Cleric
-The others would have fallen for his aura. Thank you, Father of preservation for granting me your protection. #Cleric
+The others would have fallen for his aura. Thank you, Father of Preservation for granting me your protection. #Cleric
     ->EndNode
 === PuzzleClericPermasMask ===
-A mask of... Is this Permas? or was it Permut? I hope the Boss doesn't get mad. the mask is very damaged. No matter, the other is bound to be nearby. #Cleric
+A mask of... Is this Permas? or was it Permut? I hope the Boss doesn't get mad. The mask is very damaged. No matter, the other is bound to be nearby. #Cleric
     ->EndNode
 === PuzzleClericPermutMask ===
-A mask of... Is this Permut? or was it Permas? I hope the Boss doesn't get mad. the mask is very damaged. No matter, the other is bound to be nearby. #Cleric
+A mask of... Is this Permut? or was it Permas? I hope the Boss doesn't get mad. The mask is very damaged. No matter, the other is bound to be nearby. #Cleric
     ->EndNode
 
 === PuzzleBardFirstLoad ===
@@ -114,28 +114,51 @@ Finally, I can have some action too!  #Bard
 + [Yes] -> EndNode
 + [No] -> EndNode
 
+=== InspectRogueGlyph ===
+Any idea what that depicts? No? Great... #Rogue
+    ->EndNode
+    
+=== InspectMageGlyph ===
+An arcane symbol, pretty self explanatory. #Mage
+    ->EndNode
+
+=== InspectClericGlyph ===
+The rune of Spirits, a common holy symbol. #Cleric
+    ->EndNode
+    
+=== InspectBardGlyph ===
+Some sort of depiction of a staff. #Bard
+    ->EndNode
+    
+=== InspectEndGlyph ===
+And... an empty frame. #Rogue
+Weird, one would think such a central piece would have... more to it. #Mage
+Maybe it had at some point? #Bard
+I've... I've got a bad feeling about it. Don't know why. #Cleric
+    ->EndNode
+
 === RogueStatueInteraction ===
 Huh, that's a disgusting looking... What is this exactly? #Rogue
-It's...   *P*   wh...?   *H* #Rogue?
+It's...   P   wh...?   H #Rogue?
 Oh, yeah... The puzzle. Let's hope I can get through without triggering any traps! #Rogue
     -> EndNode
 
 === MageStatueInteraction ===
 Mhmm... what... an interesting structure... #Mage
-Looks biological but th- then again- again-   *R*   again- again-   *A*   again- #Mage?
+Looks biological but th- then again- again-   R   again- again-   A   again- #Mage?
 Damn, what was the order again? I’m so going to study rune reading when I get out, would save me so much time. #Mage
     -> EndNode
     
 === ClericStatueInteraction ===
  This doesn’t look too holy... Wait... #Cleric
- It couldn’t b-   *C*   behh-.   *T*   b... #Cleric?
+ It couldn’t b-   C   behh-.   T   b... #Cleric?
  I should focus on the mirrors, better be out quick to heal the cat. #Cleric
     -> EndNode
     
 === BardStatueInteraction ===
 What’s that thing? Is it... humming? #Bard
-That...   *R*   whis-pr...   *A*   I-... #Bard?
-Yes the song! I almost lost the melody! silly me, I should better focus. #Bard
+That...   R   whis-pr...   A   I-... #Bard?
+Yes the song! I almost lost the rhythm! Silly me, I should better focus. #Bard
     -> EndNode
     
 === PuzzleRogueSolvedAlready ===

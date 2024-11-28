@@ -30,6 +30,14 @@ public class MoveAndDestroy : MonoBehaviour
 */
     private void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Player"))
+        {
+            // Optional: If using triggers instead of collisions
+            Destroy(gameObject);
+
+            ///TODO Send player to main corridor
+        }
+
         if (other.CompareTag("ProyectileObstacle"))
         {
             // Optional: If using triggers instead of collisions
