@@ -12,38 +12,29 @@ public class MainDoorLock : MonoBehaviour
 
     private void Awake()
     {
-        // Ensure all particle systems are turned off on Awake
-        if (particleSystemMage != null) particleSystemMage.Stop();
-        if (particleSystemRogue != null) particleSystemRogue.Stop();
-        if (particleSystemCleric != null) particleSystemCleric.Stop();
-        if (particleSystemBard != null) particleSystemBard.Stop();
-    }
-
-    private void Update()
-    {
-        if(GameManager.Instance.PuzzlesSolved[Character.Mage] == true)
+        if (GameManager.Instance.PuzzlesSolved[Character.Mage] == true)
         {
-            particleSystemMage.Play();
+            particleSystemMage.gameObject.SetActive(true);
         }
 
-        if(GameManager.Instance.PuzzlesSolved[Character.Rogue] == true)
+        if (GameManager.Instance.PuzzlesSolved[Character.Rogue] == true)
         {
-            particleSystemRogue.Play();
+            particleSystemRogue.gameObject.SetActive(true);
         }
 
-        if(GameManager.Instance.PuzzlesSolved[Character.Cleric] == true)
+        if (GameManager.Instance.PuzzlesSolved[Character.Cleric] == true)
         {
-            particleSystemCleric.Play();
+            particleSystemCleric.gameObject.SetActive(true);
         }
 
-        if(GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
+        if (GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
         {
-            particleSystemBard.Play();
+            particleSystemBard.gameObject.SetActive(true);
         }
 
-        if(GameManager.Instance.PuzzlesSolved[Character.Mage] && GameManager.Instance.PuzzlesSolved[Character.Rogue] && GameManager.Instance.PuzzlesSolved[Character.Cleric] && GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
+        if (GameManager.Instance.PuzzlesSolved[Character.Mage] || GameManager.Instance.PuzzlesSolved[Character.Rogue] || GameManager.Instance.PuzzlesSolved[Character.Cleric] || GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
         {
-            particleSystemLock.Play();
+            particleSystemLock.gameObject.SetActive(true);
         }
     }
 }
