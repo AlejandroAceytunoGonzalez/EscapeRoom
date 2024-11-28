@@ -29,6 +29,11 @@ public class TilePress : MonoBehaviour
         {
             // Increment the tileCount in GlobalManager
             RogueRoomTileCounter.tileCount += 1;
+            if (!GameManager.Instance.hasSteppedPlate)
+            {
+                GameManager.Instance.hasSteppedPlate = true;
+                FindObjectOfType<DialogueTrigger>().DialogueStart("PuzzleRogueFirstTile");
+            }
 
             // Log the updated tileCount
             Debug.Log("Tile Count: " + RogueRoomTileCounter.tileCount);

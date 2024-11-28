@@ -30,14 +30,22 @@ Sure. #Vyrn
 
 === PuzzleRogueFirstLoad ===
 Great. Pressure plates. Woohoo. #Tristan
+I've got a bad feeling about this... #Tristan
     ->EndNode
     
 === PuzzleRogueFirstTile ===
- ... I really hope the rest of the group also have death traps and I wasn't the only one to get a densely packed with traps room. #Tristan
+Was that... a Click? Why the walls are lighting up? #Tristan
+... #Tristan
+I really hope the rest of the group also has death traps and I wasn't the only one to get a densely packed with traps room. #Tristan
     ->EndNode
     
 === PuzzleRogueFirstDeath ===
-Wopsies... #Tristan
+Ouch! What... happened? #Tristan
+Nothing much, you just had a severe skill issue, and died horribly. #Faelen
+I had to revivify your ass.   #Faelen
+Damn... That hurt a lot...  #Tristan
+Trust me, it will hurt a lot more if you keep wasting my spell slots. Think a little next time. #Faelen
+Okay...  #Tristan
     ->EndNode
     
 === LeverRogue ===
