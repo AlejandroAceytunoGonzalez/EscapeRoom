@@ -11,7 +11,8 @@ I hope you step on a trap, stingy. #Tristan
 I mean, you will do all the walking on things we haven't before, "Scout". #Faelen
 Alright, alright, everyone... Let's be a dear and stop with the petty squabbles. ~ #Cadenza
 I saw some quality string in town that Hurdy would sound delightful with. ~ #Cadenza
-So we've got a treasure to hunt. #Cadenza
+Could you stop refering to your instrument as a person? #Vyrn
+Nope! C'mon, we've got a treasure to hunt! #Cadenza
 Remember, we are not here to plunder, this is a sacred place. #Faelen
 Of course, of course, we are just doing... Archeological research. #Vyrn
 Yup. That's it, that sounds totally right. I'm not going to yoink anything at all. #Tristan
@@ -30,29 +31,10 @@ Sure. #Vyrn
 
 === PuzzleRogueFirstLoad ===
 Great. Pressure plates. Woohoo. #Tristan
-I've got a bad feeling about this... #Tristan
     ->EndNode
     
 === PuzzleRogueFirstTile ===
-Was that... a Click? Why the walls are lighting up? #Tristan
-... #Tristan
-I really hope the rest of the group also has death traps and I wasn't the only one to get a densely packed with traps room. #Tristan
-    ->EndNode
-    
-=== PuzzleRogueFirstDeath ===
-Ouch! What... happened? #Tristan
-Nothing much, you just had a severe skill issue, and died horribly. #Faelen
-I had to revivify your ass.   #Faelen
-Damn... That hurt a lot...  #Tristan
-Trust me, it will hurt a lot more if you keep wasting my spell slots. Think a little next time. #Faelen
-Okay...  #Tristan
-    ->EndNode
-    
-=== LeverRogue ===
-Whoohoo! I made it! I finally reached the ominous lever! #Tristan
-Why the traps are still on...? #Tristan
-... #Tristan
-Welp. Two ways to go back now! #Tristan
+ ... I really hope the rest also have death traps and I didn't just get the densely packed with traps room. #Tristan
     ->EndNode
 
 === PuzzleMageFirstLoad ===
