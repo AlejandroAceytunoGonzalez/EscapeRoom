@@ -103,7 +103,7 @@ MonoBehaviour:
   eyeLevelOffset: -1
   grassInteractor: {fileID: 6521385977223879510}
   grassInteractorWidthOffset: 1
-  <playerCharacter>k__BackingField: 2
+  <playerCharacter>k__BackingField: 0
   speed: 5
   sprintSpeed: 10
   interactionRange: 12

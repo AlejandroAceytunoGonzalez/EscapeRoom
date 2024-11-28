@@ -10497,6 +10497,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
+      propertyPath: destinationPos.y
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3363081289042143872, guid: b7866842522a0cc489da180cc2f9860f,
+        type: 3}
       propertyPath: destinationRotationPov
       value: 0
       objectReference: {fileID: 0}

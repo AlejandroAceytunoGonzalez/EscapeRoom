@@ -33,7 +33,14 @@ Great. Pressure plates. Woohoo. #Tristan
     ->EndNode
     
 === PuzzleRogueFirstTile ===
- ... I really hope the rest also have death traps and I didn't just get the densely packed with traps room. #Tristan
+ ... I really hope the rest of the group also have death traps and I wasn't the only one to get a densely packed with traps room. #Tristan
+    ->EndNode
+    
+=== LeverRogue ===
+Whoohoo! I made it! I finally reached the ominous lever! #Tristan
+Why the traps are still on...? #Tristan
+... #Tristan
+Welp. Two ways to go back now! #Tristan
     ->EndNode
 
 === PuzzleMageFirstLoad ===
