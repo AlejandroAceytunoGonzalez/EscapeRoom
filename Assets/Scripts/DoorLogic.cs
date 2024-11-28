@@ -25,7 +25,6 @@ public class DoorLogic : MonoBehaviour
     {
         dialogueTrigger = GetComponent<DialogueTrigger>();
         interactor = GetComponent<Interactable>();
-        sceneChanger = FindObjectOfType<SceneChanger>();
         player = FindObjectOfType<PlayerController>();
     }
 
@@ -46,6 +45,7 @@ public class DoorLogic : MonoBehaviour
             }
         }
         if (isKiller) GameManager.Instance.hasDied = true;
+        sceneChanger = FindObjectOfType<SceneChanger>();
         sceneChanger.ChangeScene(sceneName, player.playerCharacter , destinationPos, destinationRotationPov);
     }
     public void TryDoorReset()

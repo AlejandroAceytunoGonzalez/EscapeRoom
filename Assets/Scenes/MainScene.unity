@@ -5271,6 +5271,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorGlyphFrame
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -15701,6 +15706,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: DoorGlyphFrame (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -16343,6 +16353,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorGlyphFrame (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -22334,6 +22349,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorGlyphFrame Lock
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33413,6 +33433,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DoorGlyphFrame (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: bd8e8a5508b6b564f9736e92752f716f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
