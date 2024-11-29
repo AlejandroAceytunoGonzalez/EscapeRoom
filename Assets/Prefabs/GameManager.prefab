@@ -48,6 +48,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6077a3aefd2b7a44bb101572386ce01a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  outroSceneName: OutroScene
+  cursor: {fileID: 5410195565299522412}
+  hasDied: 0
+  hasDiedAlready: 0
 --- !u!114 &32994150820281115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -241,6 +245,12 @@ PrefabInstance:
 --- !u!224 &509473658244914787 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6204968449911414770, guid: 3c7d7c8e57c09ef4eb427eb8cc8d7d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 5840740430301528465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5410195565299522412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1880985437241137917, guid: 3c7d7c8e57c09ef4eb427eb8cc8d7d55,
     type: 3}
   m_PrefabInstance: {fileID: 5840740430301528465}
   m_PrefabAsset: {fileID: 0}

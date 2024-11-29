@@ -36,7 +36,11 @@ public class MainDoorLock : MonoBehaviour
         if (GameManager.Instance.PuzzlesSolved[Character.Mage] || GameManager.Instance.PuzzlesSolved[Character.Rogue] || GameManager.Instance.PuzzlesSolved[Character.Cleric] || GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
         {
             particleSystemLock.gameObject.SetActive(true);
-            doorBars.SetActive(true);
+        }
+
+        if (GameManager.Instance.PuzzlesSolved[Character.Mage] && GameManager.Instance.PuzzlesSolved[Character.Rogue] && GameManager.Instance.PuzzlesSolved[Character.Cleric] && GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
+        {
+            doorBars.SetActive(false);
         }
     }
 }

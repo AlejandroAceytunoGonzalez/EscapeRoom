@@ -6,6 +6,7 @@ public class BlockInput : MonoBehaviour
 {
     public void SetPlayerInput(bool state)
     {
-        FindObjectOfType<PlayerController>().SetCanMove(state);
+        PlayerController player = FindObjectOfType<PlayerController>();
+        if (player != null ) player.SetCanMove(state);
     }
 }

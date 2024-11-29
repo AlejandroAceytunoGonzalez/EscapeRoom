@@ -220,7 +220,7 @@ C'mon, We'll be right by you. I'll even cast bardic inspiration! #Cadenza
 Sigh... (She just wants to play her instrument.) Okay... #Tristan
     -> EndNode
     
-=== FinalRoom ===
+=== OutroSceneFirstLoad ===
 AHA! Trrrreasuuuuuure! ~ #Tristan
 Wait, this is all? A fricking coffin? #Tristan
 Mind your manners. #Faelen
@@ -229,10 +229,14 @@ Mhmmm, I dunno... I mean it's not like they'll miss it but... Graverobbing? #Cad
 It's quite in poor taste, yes. #Faelen
 Well, I'm not leaving with my hands empty so dont mind if I do ~ #Tristan
 You alright there bud? You went sil- #Cadenza
+... #Cadenza?
+...  #Faelen?
+...  #Vyrn?
+...  #Tristan?
 WHAT #Tristan?
 IS #Vyrn?
 MY #Faelen?
-NAME #Cadenza?
+NAME? #Cadenza?
     ->EndNode
     
 === EndingBad ===

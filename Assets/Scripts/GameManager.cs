@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
 
+    [SerializeField] private string outroSceneName;
+    [SerializeField] private GameObject cursor;
     private DialogueTrigger dialogueTrigger;
 
     private HashSet<string> visitedScenes = new HashSet<string>();
@@ -39,6 +41,11 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string sceneName = scene.name;
+        if (sceneName == outroSceneName)
+        {
+            Destroy(cursor);
+            cursor = null;
+        }
         if (!visitedScenes.Contains(sceneName))
         {
             visitedScenes.Add(sceneName);

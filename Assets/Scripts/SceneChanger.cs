@@ -29,9 +29,12 @@ public class SceneChanger : MonoBehaviour
         }
         yield return new WaitForEndOfFrame();
         PlayerController player = FindObjectOfType<PlayerController>();
-        player.SetCharacter(character);
-        player.SetRotPov(rotationPov);
-        player.transform.position = pos;
+        if (player != null)
+        {
+            player.SetCharacter(character);
+            player.SetRotPov(rotationPov);
+            player.transform.position = pos;
+        }
         StartCoroutine(DestroyLater(toDelete));
     }
     public IEnumerator DestroyLater(GameObject toDelete)
