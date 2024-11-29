@@ -6,12 +6,14 @@ using UnityEngine;
 
 public class MusicPuzzle : MonoBehaviour
 {
+    [SerializeField, ColorUsage(true, true)] private Color winColor;
+    [SerializeField] private Transform progressTransform;
+    [SerializeField] private float progressFactor;
     [SerializeField] private GameObject musicRollsParent;
     [SerializeField] private float clipLength;
     [SerializeField] private float switchTimeBefore;
     [SerializeField] private float switchTimeDuring;
     [SerializeField] private float timerAfterInteract;
-    private List<MusicRoll> musicRollsoOriginOrder;
     private List<MusicRoll> musicRolls;
 
     private List<MusicRoll> selectedRolls = new List<MusicRoll>();
@@ -20,13 +22,14 @@ public class MusicPuzzle : MonoBehaviour
 
     private float totalTimer;
     private float timer = 0;
+    private int progress = 0;
     private bool canPlay = true;
 
     private void Awake()
     {
-        musicRollsoOriginOrder = musicRollsParent.GetComponentsInChildren<MusicRoll>().ToList();
-        musicRolls = new List<MusicRoll>(musicRollsoOriginOrder);
+        musicRolls = musicRollsParent.GetComponentsInChildren<MusicRoll>().ToList();
         totalTimer = musicRolls.Count * clipLength / 3;
+        CheckRolls();
     }
 
     private void Update()
@@ -51,9 +54,14 @@ public class MusicPuzzle : MonoBehaviour
             }
             yield return new WaitForSeconds(clipLength);
         }
+        if (progress >= 9)
+        {
+            Debug.Log("yippe");
+        }
     }
     public void Select(MusicRoll roll)
     {
+        if (GameManager.Instance.PuzzlesSolved[Character.Bard]) return;
         OnSelect?.Invoke();
         canPlay = false;
         if (selectedRolls.Count == 0)
@@ -91,5 +99,26 @@ public class MusicPuzzle : MonoBehaviour
         musicRolls[index1] = selectedRolls[0];
         selectedRolls[0].SwitchRot(rot1);
         selectedRolls[1].SwitchRot(rot0);
+        CheckRolls();
+    }
+
+    private void CheckRolls()
+    {
+        progress = 0;
+        int groupIndex = 0;
+        for (int i = 0; i < musicRolls.Count; i += 3)
+        {
+            for (int j = i; j < i + 3 && j < musicRolls.Count; j++)
+            {
+                if (musicRolls[j].intendedSet == groupIndex) progress++;
+            }
+            groupIndex++;
+        }
+        if (progress >= 9)
+        {
+            GameManager.Instance.Solve(Character.Bard);
+            progressTransform.GetComponent<Renderer>().material.SetColor("_EmissionColor", winColor);
+        }
+        progressTransform.localPosition = new Vector3(0, progressFactor * progress, 0);
     }
 }
