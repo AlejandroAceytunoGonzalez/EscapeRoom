@@ -87,6 +87,8 @@ A mask of... Is this Permut? or was it Permas? I hope the Boss doesn't get mad. 
 My! My! What do we have here? #Cadenza
 I did not know we were in the fancy kind of decrepit ruins. If it isn't an Orchestrion! #Cadenza
 I never imagined I would find something like this here! #Cadenza
+But it's such a pity... it seems like someone swapped the music cylinders...  #Cadenza
+Maybe it would sound like intended If I put them in the correct order...  #Cadenza
 I should try and tune it up, see if I can record the song for my repertoire. ~ #Cadenza
     ->EndNode
 
@@ -217,7 +219,7 @@ Cadenza. #Faelen
 I might have taught him a lil' bit of magic... you know, just a cantrip or two... #Cadenza
 Please, I already went throught the pressure plates... ;-; #Tristan
 C'mon, We'll be right by you. I'll even cast bardic inspiration! #Cadenza
-Sigh... (She just wants to play her instrument.) Okay... #Tristan
+Sigh... (She just wants to play her instrument). Okay... #Tristan
     -> EndNode
     
 === OutroSceneFirstLoad ===
