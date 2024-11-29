@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider capsuleCollider;
     private Transform cameraTransform;
     private Rigidbody rb;
+    private Cursor cursor;
 
     private bool canMove = true;
     private Vector3 inputVector;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        cursor = FindObjectOfType<Cursor>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         if (cameraTransform == null) cameraTransform = Camera.main.transform;
         UpdateCharacter();
@@ -50,6 +52,26 @@ public class PlayerController : MonoBehaviour
         {
             inputVector = Vector3.zero;
             inputSprint = false;
+        }
+        RaycastHit hit;
+        Vector3 rayOrigin = cameraTransform.position;
+        Vector3 rayDirection = cameraTransform.forward;
+
+        if (Physics.Raycast(rayOrigin, rayDirection, out hit, interactionRange))
+        {
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+            if (interactable != null && interactable.GetInteractableType() == InteractableType.Manual)
+            {
+                cursor.SetCursorInteractable(true);
+            }
+            else
+            {
+                cursor.SetCursorInteractable(false);
+            }
+        }
+        else
+        {
+            cursor.SetCursorInteractable(false);
         }
     }
     void FixedUpdate()

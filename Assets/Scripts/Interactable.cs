@@ -50,6 +50,10 @@ public class Interactable : MonoBehaviour
     {
         if (type == InteractableType.OnTriggerEnter) Interact();
     }
+    public InteractableType GetInteractableType()
+    {
+        return type;
+    }
     private void OnDisable()
     {
         if (type == InteractableType.OnDisable) Interact();
