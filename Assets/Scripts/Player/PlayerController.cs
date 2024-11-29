@@ -1,5 +1,4 @@
 using Cinemachine;
-using ProceduralGrass;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerCharactersSO characterDefs;
     [SerializeField] private Transform eyeLevelTransform;
     [SerializeField] private float eyeLevelOffset = -1;
-    [SerializeField] private GrassInteractor grassInteractor;
     [SerializeField] private float grassInteractorWidthOffset = 1;
     [field: SerializeField] public Character playerCharacter { get; private set; } = Character.Rogue;
     public static event Action<Character> OnCharacterChange;
@@ -146,7 +144,6 @@ public class PlayerController : MonoBehaviour
         capsuleCollider.radius = characterWidth;
         capsuleCollider.center = new Vector3(0,characterHeight/2,0);
         eyeLevelTransform.localPosition = new Vector3(0, characterHeight + eyeLevelOffset, 0);
-        grassInteractor.SetRadius(characterWidth + grassInteractorWidthOffset);
     }
 
     private void OnTriggerEnter(Collider other)
