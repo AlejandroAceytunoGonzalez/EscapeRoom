@@ -31,7 +31,7 @@ Sure. #Vyrn
 
 === PuzzleRogueFirstLoad ===
 Great. Pressure plates. Woohoo. #Tristan
-I've got a bad feeling about this... #Tristan
+I don't like the look of those masks either...  #Tristan
 I really hope the rest of the group also has death traps and I wasn't the only one to get a densely packed with traps room. #Tristan
     ->EndNode
     
@@ -49,11 +49,6 @@ Whoohoo! I made it! I finally reached the ominous lever! #Tristan
 Why the traps are still on...? #Tristan
 ... #Tristan
 Welp. Two ways to go back now! #Tristan
-    ->EndNode
-
-=== PuzzleRogueFirstTile ===
-... Oh I don't like the look of those masks. #Tristan
-I really hope the rest also have death traps and I didn't just get the densely packed with traps room. #Tristan
     ->EndNode
 
 === PuzzleMageFirstLoad ===
@@ -91,6 +86,19 @@ But it's such a pity... it seems like someone swapped the music cylinders...  #C
 Maybe it would sound like intended If I put them in the correct order...  #Cadenza
 I should try and tune it up, see if I can record the song for my repertoire. ~ #Cadenza
     ->EndNode
+
+=== BardRoomSolved ===
+Yes, It sounds Nice! #Cadenza
+-> EndNode
+
+=== BardSongStart ===
+H-Huh? What is happening? #Cadenza
+Wait, I... I feel a little dizzy... #Cadenza?
+-> EndNode
+
+=== BardSongDejaVu ===
+Oh, well would you look at that, this room's already solved, guess I can just take a lil rest and join the others! Lucky me! #Cadenza
+-> EndNode
 
 
 === PuzzleRogueWrongCharacter ===

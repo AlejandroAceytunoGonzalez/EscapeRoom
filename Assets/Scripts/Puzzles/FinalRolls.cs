@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class FinalRolls : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] private List<Animator> goldenRolls;
+    private MusicPuzzle musicPuzzle;
+    private void Awake()
     {
-        
+        musicPuzzle = FindObjectOfType<MusicPuzzle>();
+        musicPuzzle.OnFinish += Finish;
     }
-
-    // Update is called once per frame
-    void Update()
+    public void Finish()
     {
-        
+        foreach (Animator rotatingAnim in goldenRolls) {
+            rotatingAnim.SetBool("Finished", true);
+        }
+
     }
 }

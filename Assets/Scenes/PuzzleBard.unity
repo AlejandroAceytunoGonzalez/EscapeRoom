@@ -864,6 +864,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8e6052674a02ad4c994ee764c912109, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldenRolls:
+  - {fileID: 7138155201158881033}
+  - {fileID: 7138155200168511014}
+  - {fileID: 7138155200628526354}
 --- !u!1 &313693349
 GameObject:
   m_ObjectHideFlags: 0

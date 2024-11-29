@@ -17,12 +17,17 @@ public class MusicRoll : MonoBehaviour
     {
         musicPuzzle = FindObjectOfType<MusicPuzzle>();
         musicPuzzle.OnSelect += StopSound;
+        musicPuzzle.OnFinish += Finish;
     }
 
     public void PlaySound()
     {
         audioClip.Play();
         rotatingAnim.SetTrigger("Rotate");
+    }
+    public void Finish()
+    {
+        rotatingAnim.SetBool("Finished", true);
     }
     private void StopSound()
     {

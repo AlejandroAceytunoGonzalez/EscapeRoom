@@ -19,11 +19,13 @@ public class MusicPuzzle : MonoBehaviour
     private List<MusicRoll> selectedRolls = new List<MusicRoll>();
 
     public Action OnSelect;
+    public Action OnFinish;
 
     private float totalTimer;
     private float timer = 0;
     private int progress = 0;
     private bool canPlay = true;
+    private bool isFinished;
 
     private void Awake()
     {
@@ -34,13 +36,17 @@ public class MusicPuzzle : MonoBehaviour
 
     private void Update()
     {
-        if (canPlay)
+        if (canPlay && !isFinished)
         {
             timer -= Time.deltaTime;
             if (timer < 0)
             {
                 timer = totalTimer;
                 StartCoroutine(PlaySounds());
+                if (progress >= 9)
+                {
+                    isFinished = true;
+                }
             }
         }
     }
@@ -54,9 +60,9 @@ public class MusicPuzzle : MonoBehaviour
             }
             yield return new WaitForSeconds(clipLength);
         }
-        if (progress >= 9)
+        if (isFinished)
         {
-            Debug.Log("yippe");
+            OnFinish?.Invoke();
         }
     }
     public void Select(MusicRoll roll)
