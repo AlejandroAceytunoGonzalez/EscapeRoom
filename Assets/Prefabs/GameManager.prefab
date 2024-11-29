@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outroSceneName: OutroScene
-  cursor: {fileID: 5410195565299522412}
+  cursor: {fileID: 8468517355340778473}
   hasDied: 0
   hasDiedAlready: 0
 --- !u!114 &32994150820281115
@@ -284,12 +284,12 @@ PrefabInstance:
     - target: {fileID: 3481609343939363631, guid: 3c7d7c8e57c09ef4eb427eb8cc8d7d55,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 32
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 3481609343939363631, guid: 3c7d7c8e57c09ef4eb427eb8cc8d7d55,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 32
+      value: 64
       objectReference: {fileID: 0}
     - target: {fileID: 4128887391662681221, guid: 3c7d7c8e57c09ef4eb427eb8cc8d7d55,
         type: 3}
@@ -405,7 +405,7 @@ PrefabInstance:
     - target: {fileID: 9197589629521159529, guid: 3c7d7c8e57c09ef4eb427eb8cc8d7d55,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.19607843
+      value: 0.39215687
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

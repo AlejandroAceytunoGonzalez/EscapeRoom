@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [SerializeField] private string outroSceneName;
-    [SerializeField] private GameObject cursor;
+    public Cursor cursor;
     private DialogueTrigger dialogueTrigger;
 
     private HashSet<string> visitedScenes = new HashSet<string>();
@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
         string sceneName = scene.name;
         if (sceneName == outroSceneName)
         {
-            Destroy(cursor);
+            Destroy(cursor.gameObject);
             cursor = null;
         }
         if (!visitedScenes.Contains(sceneName))

@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private PlayerCharactersSO characterDefs;
     [SerializeField] private Transform eyeLevelTransform;
     [SerializeField] private float eyeLevelOffset = -1;
-    [SerializeField] private float grassInteractorWidthOffset = 1;
     [field: SerializeField] public Character playerCharacter { get; private set; } = Character.Rogue;
     public static event Action<Character> OnCharacterChange;
 
@@ -21,7 +20,6 @@ public class PlayerController : MonoBehaviour
     private CapsuleCollider capsuleCollider;
     private Transform cameraTransform;
     private Rigidbody rb;
-    private Cursor cursor;
 
     private bool canMove = true;
     private Vector3 inputVector;
@@ -30,7 +28,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        cursor = FindObjectOfType<Cursor>();
         capsuleCollider = GetComponent<CapsuleCollider>();
         if (cameraTransform == null) cameraTransform = Camera.main.transform;
         UpdateCharacter();
@@ -60,16 +57,16 @@ public class PlayerController : MonoBehaviour
             Interactable interactable = hit.collider.GetComponent<Interactable>();
             if (interactable != null && interactable.GetInteractableType() == InteractableType.Manual)
             {
-                cursor.SetCursorInteractable(true);
+                GameManager.Instance.cursor?.SetCursorInteractable(true);
             }
             else
             {
-                cursor.SetCursorInteractable(false);
+                GameManager.Instance.cursor?.SetCursorInteractable(false);
             }
         }
         else
         {
-            cursor.SetCursorInteractable(false);
+            GameManager.Instance.cursor?.SetCursorInteractable(false);
         }
     }
     void FixedUpdate()
