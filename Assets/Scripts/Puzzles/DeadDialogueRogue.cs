@@ -15,7 +15,7 @@ public class DeadDialogueRogue : MonoBehaviour
     }
     private IEnumerator InvokedStart(DialogueTrigger dialogueTrigger)
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForEndOfFrame();
         dialogueTrigger.DialogueStart();
     }
 }
