@@ -10,6 +10,9 @@ public class MoveAndDestroy : MonoBehaviour
     // Lifetime of the object in seconds (to prevent it from persisting too long)
     public float lifetime = 5f;
 
+    // Flag to control movement
+    private bool canMove = true;
+
     private void Start()
     {
         // Automatically destroy the object after its lifetime expires
@@ -18,30 +21,35 @@ public class MoveAndDestroy : MonoBehaviour
 
     private void Update()
     {
-        // Move the object forward based on its local forward direction
-        transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
+        if (canMove)
+        {
+            // Move the object forward based on its local forward direction
+            transform.Translate(Vector3.down * moveSpeed * Time.deltaTime);
+        }
     }
-/*
-    private void OnCollisionEnter(Collision collision)
-    {
-        // Destroy the object when it collides with anything
-        Destroy(gameObject);
-    }
-*/
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            // Optional: If using triggers instead of collisions
+            // Destroy immediately when hitting the player
             Destroy(gameObject);
 
-            ///TODO Send player to main corridor
+            /// TODO: Send player to main corridor
         }
 
         if (other.CompareTag("ProyectileObstacle"))
         {
-            // Optional: If using triggers instead of collisions
-            Destroy(gameObject);
+            // Stop movement and start the destruction delay
+            canMove = false;
+            StartCoroutine(DestroyAfterDelay(0.5f)); // Delay of 0.5 seconds
         }
+    }
+
+    // Coroutine to handle the delay before destruction
+    private IEnumerator DestroyAfterDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(gameObject);
     }
 }

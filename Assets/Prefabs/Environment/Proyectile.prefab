@@ -4843,7 +4843,6 @@ GameObject:
   - component: {fileID: 8475001935106692637}
   - component: {fileID: 7817730996517498573}
   - component: {fileID: 6538594043427476499}
-  - component: {fileID: -540125091827724321}
   - component: {fileID: -2409135700168533551}
   m_Layer: 0
   m_Name: Proyectile
@@ -4955,27 +4954,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 100
   lifetime: 3
---- !u!135 &-540125091827724321
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2217696335285975943}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &-2409135700168533551
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5204,7 +5182,7 @@ PrefabInstance:
     - target: {fileID: 5129331591712331864, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5129331591712331864, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
@@ -5219,7 +5197,7 @@ PrefabInstance:
     - target: {fileID: 5129331591712331864, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 5129331591712331864, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
@@ -5234,7 +5212,7 @@ PrefabInstance:
     - target: {fileID: 5129331591712331864, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 7282999172862271812, guid: b7866842522a0cc489da180cc2f9860f,
         type: 3}
