@@ -34,7 +34,8 @@ Great. Pressure plates. Woohoo. #Tristan
     ->EndNode
     
 === PuzzleRogueFirstTile ===
- ... I really hope the rest also have death traps and I didn't just get the densely packed with traps room. #Tristan
+... Oh I don't like the look of those masks. #Tristan
+I really hope the rest also have death traps and I didn't just get the densely packed with traps room. #Tristan
     ->EndNode
 
 === PuzzleMageFirstLoad ===
@@ -68,7 +69,7 @@ A mask of... Is this Permut? or was it Permas? I hope the Boss doesn't get mad. 
 My! My! What do we have here? #Cadenza
 I did not know we were in the fancy kind of decrepit ruins. If it isn't an Orchestrion! #Cadenza
 I never imagined I would find something like this here! #Cadenza
-I should try and tune it up, make it sound nice, and see if I can listen the recorded song for my repertoire ~ #Cadenza
+I should try and tune it up, see if I can record the song for my repertoire. ~ #Cadenza
     ->EndNode
 
 
@@ -237,8 +238,15 @@ Rusted? So it isn't even gold? #Cadenza
 Nope, looks like... I dunno, some metal. I'm no goldsmith. #Tristan
 Well, I guess it's better than nothing, shall we leave then? #Vyrn
 I guess so. #Tristan
+Don't sound so defeated Tristan, at least we are bringing something with us! #Cadenza
+Yeah, you are right. Let's go! We should celebrate! #Tristan
+With what money? #Vyrn
+I'll think of something! We can sell that lichiwhatever you found! #Tristan
+I mean, we can try. #Vyrn
+And with that we have a plan! Off we go! #Tristan
 
-...
+... #???
 
-.os sseug I ?neht evael ew llahs ,gnihton naht retteb s'ti sseug I ,lleW .htimsdlog on m'I .latem emos ,onnud I ...ekil skool ,epoN ?dlog neve t'nsi ti oS ?detsuR .detsur yrev si ti tuB .walc a htiw lil a ti yrp nac I ,elddim eht ni pag niht yrev a s'ereht ,lleW ?tnadnep a ton dna tekcol a s'ti wonk uoy od woh dnA .tros eht fo gnihtyna ees t'nac I tub gnihtemos ro elohyek a evah dluohs ti ekil skool tI ?eeS !tluaf ym ton s'ti yeH .uoy kcik annog m'I .dekcol si ,tekcol siht tub ,puY ?ni erutcip a peek uoy seno eht ,ekiL ?tekcol A .tekcol A ...evah ew dnA #Phractas
+.~ nuf hcum os eb annog si siht oH #Phractas
+.~ sdneirf ,ytrap ruop nioj ot desaelP #Phractas
     ->EndNode

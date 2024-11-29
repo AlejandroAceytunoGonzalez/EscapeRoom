@@ -9,6 +9,7 @@ public class MainDoorLock : MonoBehaviour
     [SerializeField] private ParticleSystem particleSystemCleric;
     [SerializeField] private ParticleSystem particleSystemBard;
     [SerializeField] private ParticleSystem particleSystemLock;
+    [SerializeField] private GameObject doorBars;
 
     private void Awake()
     {
@@ -35,6 +36,7 @@ public class MainDoorLock : MonoBehaviour
         if (GameManager.Instance.PuzzlesSolved[Character.Mage] || GameManager.Instance.PuzzlesSolved[Character.Rogue] || GameManager.Instance.PuzzlesSolved[Character.Cleric] || GameManager.Instance.PuzzlesSolved[Character.Bard] == true)
         {
             particleSystemLock.gameObject.SetActive(true);
+            doorBars.SetActive(true);
         }
     }
 }

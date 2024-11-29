@@ -30,4 +30,6 @@ MonoBehaviour:
   - characterTag: Cadenza?
     sprite: {fileID: 21300000, guid: 7ad83f32222bd434e98197123fa1ae48, type: 3}
   - characterTag: Phractas
-    sprite: {fileID: 21300000, guid: f73ca888778db5b4f926ca3c477686c0, type: 3}
+    sprite: {fileID: 21300000, guid: 6787e5e2f6be55a47914b49d2385b84c, type: 3}
+  - characterTag: ???
+    sprite: {fileID: 21300000, guid: 13dd3c9e3b532a5429b589d172773c56, type: 3}
