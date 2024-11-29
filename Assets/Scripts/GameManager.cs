@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
 
     public bool hasDied;
     public bool hasDiedAlready;
-    public bool hasSteppedPlate;
 
     public Dictionary<Character, bool> PuzzlesSolved { get; private set; } = new Dictionary<Character, bool>
     {
