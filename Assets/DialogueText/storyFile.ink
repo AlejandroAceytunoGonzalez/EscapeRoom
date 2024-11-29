@@ -87,16 +87,16 @@ Maybe it would sound like intended If I put them in the correct order...  #Caden
 I should try and tune it up, see if I can record the song for my repertoire. ~ #Cadenza
     ->EndNode
 
-=== BardRoomSolved ===
-Yes, It sounds Nice! #Cadenza
+=== BardSongStart ===
+Magnificent! this is a melody long forgotten... I want to listen to it for a little while! #Cadenza
 -> EndNode
 
-=== BardSongStart ===
+=== BardSongEnd ===
 H-Huh? What is happening? #Cadenza
 Wait, I... I feel a little dizzy... #Cadenza?
 -> EndNode
 
-=== BardSongDejaVu ===
+=== PuzzleBardDejaVuFirstLoad  ===
 Oh, well would you look at that, this room's already solved, guess I can just take a lil rest and join the others! Lucky me! #Cadenza
 -> EndNode
 

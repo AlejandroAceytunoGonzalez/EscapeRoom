@@ -7,6 +7,8 @@ using UnityEngine;
 public class MusicPuzzle : MonoBehaviour
 {
     [SerializeField, ColorUsage(true, true)] private Color winColor;
+    [SerializeField] private bool isDejaVu;
+    [SerializeField] private DoorLogic doorObject;
     [SerializeField] private Transform progressTransform;
     [SerializeField] private float progressFactor;
     [SerializeField] private GameObject musicRollsParent;
@@ -32,11 +34,20 @@ public class MusicPuzzle : MonoBehaviour
         musicRolls = musicRollsParent.GetComponentsInChildren<MusicRoll>().ToList();
         totalTimer = musicRolls.Count * clipLength / 3;
         CheckRolls();
+        if (isDejaVu)
+        {
+            StartCoroutine(DelayedFinish());
+        }
+    }
+    private IEnumerator DelayedFinish()
+    {
+        yield return new WaitForEndOfFrame();
+        OnFinish?.Invoke();
     }
 
     private void Update()
     {
-        if (canPlay && !isFinished)
+        if (canPlay && !isFinished && !isDejaVu)
         {
             timer -= Time.deltaTime;
             if (timer < 0)
@@ -46,7 +57,17 @@ public class MusicPuzzle : MonoBehaviour
                 if (progress >= 9)
                 {
                     isFinished = true;
+                    doorObject.gameObject.SetActive(false);
                 }
+            }
+        }
+        if (isDejaVu)
+        {
+            timer -= Time.deltaTime;
+            if (timer < 0)
+            {
+                timer = totalTimer;
+                StartCoroutine(PlaySounds());
             }
         }
     }
@@ -60,7 +81,7 @@ public class MusicPuzzle : MonoBehaviour
             }
             yield return new WaitForSeconds(clipLength);
         }
-        if (isFinished)
+        if (isFinished && !isDejaVu)
         {
             OnFinish?.Invoke();
         }
