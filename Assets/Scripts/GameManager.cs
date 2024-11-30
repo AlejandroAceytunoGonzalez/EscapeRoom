@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string sceneName = scene.name;
-        if (sceneName == outroSceneName)
+        if (sceneName == outroSceneName && cursor != null)
         {
             Destroy(cursor.gameObject);
             cursor = null;

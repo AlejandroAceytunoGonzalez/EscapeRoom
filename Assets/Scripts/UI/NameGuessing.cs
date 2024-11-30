@@ -14,7 +14,7 @@ public class NameGuessing : MonoBehaviour
     public void EndGame()
     {
         SceneChanger sceneChanger = FindObjectOfType<SceneChanger>();
-        sceneChanger.ChangeScene(endScene, Character.Rogue, Vector3.zero, 0);
+        sceneChanger.ChangeScene(endScene, Character.Rogue, Vector3.zero, 90);
     }
     public void CheckName()
     {
