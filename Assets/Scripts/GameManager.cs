@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +11,8 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [SerializeField] private string outroSceneName;
+    [SerializeField] private GameObject cursorPrefab;
+    [SerializeField] private Transform targetChildCursor;
     public Cursor cursor;
     private DialogueTrigger dialogueTrigger;
 
@@ -60,5 +64,13 @@ public class GameManager : MonoBehaviour
     public void Solve(Character character)
     {
         PuzzlesSolved[character] = true;
+    }
+
+    public void GenerateCursor()
+    {
+        GameObject newCursor = Instantiate(cursorPrefab, targetChildCursor.parent.transform);
+        int targetIndex = targetChildCursor.transform.GetSiblingIndex();
+        newCursor.transform.SetSiblingIndex(targetIndex + 1);
+        cursor = newCursor.GetComponent<Cursor>();
     }
 }
