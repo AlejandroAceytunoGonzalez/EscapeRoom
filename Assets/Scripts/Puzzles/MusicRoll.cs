@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class MusicRoll : MonoBehaviour
 {
+    [field: SerializeField] public int intendedSet { get; set; }
     [SerializeField] private Transform separatorTransform;
     [SerializeField] float rotationSpeed = 1.0f;
     [SerializeField] private AudioSource audioClip;
@@ -26,6 +27,11 @@ public class MusicRoll : MonoBehaviour
     private void StopSound()
     {
         audioClip.Stop();
+        AnimatorStateInfo stateInfo = rotatingAnim.GetCurrentAnimatorStateInfo(0);
+        if (stateInfo.IsName("Rotating"))
+        {
+            rotatingAnim.SetTrigger("ForceBack");
+        }
     }
     public void SelectMe()
     {
@@ -73,6 +79,7 @@ public class MusicRoll : MonoBehaviour
             transform.localEulerAngles = newRotation;
             yield return null;
         }
+
         Vector3 finalRotation = transform.localEulerAngles;
         finalRotation.y = targetYRotation % 360;
         transform.localEulerAngles = finalRotation;
