@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerCharactersSO characterDefs;
     [SerializeField] private Transform eyeLevelTransform;
+    [SerializeField] private AudioSource stepSound;
     [SerializeField] private float eyeLevelOffset = -1;
     [field: SerializeField] public Character playerCharacter { get; private set; } = Character.Rogue;
     public static event Action<Character> OnCharacterChange;
@@ -42,11 +43,29 @@ public class PlayerController : MonoBehaviour
 
             inputSprint = Input.GetKey(KeyCode.LeftShift);
             if (Input.GetKeyDown(KeyCode.E)) ManualInteract();
+
+            if (inputVector.magnitude > 0.1f)
+            {
+                // If the player is moving, play the walking sound
+                if (!stepSound.isPlaying)
+                {
+                    stepSound.Play();
+                }
+            }
+            else
+            {
+                // Stop the walking sound when not moving
+                if (stepSound.isPlaying)
+                {
+                    stepSound.Stop();
+                }
+            }
         }
         else
         {
             inputVector = Vector3.zero;
             inputSprint = false;
+            if (stepSound.isPlaying) stepSound.Stop();
         }
         RaycastHit hit;
         Vector3 rayOrigin = cameraTransform.position;
