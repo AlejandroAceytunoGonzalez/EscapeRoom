@@ -257,8 +257,15 @@ Why did we even come here guys? Haha... #Tristan
 No idea, but let's just put this behind us. #Faelen
 Yes, better not idle too much here. #Cadenza
     ->EndNode
+
+=== WrongGuess ===
+THAT IS NOT MY NAME. #???
+    ->EndNode
     
 === EndingGood ===
+Click. #???
+What just happened? When did the coffin open? #Tristan
+Maybe the century old stench knocked us out senseless... #Vyrn
 And we have... A locket. #Tristan
 A locket? Like, the ones you keep a picture in? #Cadenza
 Yup, but this locket, is "locked". #Tristan
