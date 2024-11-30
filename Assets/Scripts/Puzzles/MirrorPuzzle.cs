@@ -8,6 +8,7 @@ using Random = UnityEngine.Random;
 public class MirrorPuzzle : MonoBehaviour
 {
     [SerializeField, ColorUsage(true, true)] private Color winColor;
+    [SerializeField] private AudioSource gearSound;
     [SerializeField] private GameObject mirrorsProjectionsParent;
     [SerializeField] private GameObject mirrorsSwitchesParent;
     [SerializeField] private GameObject gearsParent;
@@ -91,6 +92,7 @@ public class MirrorPuzzle : MonoBehaviour
 
     private void UpdateGears()
     {
+        gearSound.Play();
         foreach (Animator gear in gears)
         {
             int randomState = Random.Range(0, 3);
