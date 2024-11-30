@@ -189,7 +189,7 @@ Damn, what was the order again? I’m so going to study rune reading when I get 
     
 === BardStatueInteraction ===
 What’s that thing? Is it... humming? #Cadenza
-That...   R   whis-pr...   A   I-... #Cadenza?
+That...   A   whis-pr...   S   I-... #Cadenza?
 Yes the song! I almost lost the rhythm! Silly me, I should better focus. #Cadenza
     -> EndNode
     
