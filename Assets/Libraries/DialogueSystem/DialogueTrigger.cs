@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,5 +19,10 @@ public class DialogueTrigger : MonoBehaviour
     public void DialogueStart(string knotName)
     {
         DialogueCanvas.Instance.StartDialogue(knotName, textDisplay, optionsDisplay, choiceEvents, onStartEvent, onCloseEvent);
+    }
+
+    internal void SetEventClose(UnityEvent closeEvent)
+    {
+        onCloseEvent = closeEvent;
     }
 }

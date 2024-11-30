@@ -1,6 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(DialogueTrigger))]
@@ -9,6 +12,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     [SerializeField] private string outroSceneName;
+    [SerializeField] private Canvas outroNameGuess;
+    [SerializeField] private GameObject cursorPrefab;
+    [SerializeField] private Transform targetChildCursor;
     public Cursor cursor;
     private DialogueTrigger dialogueTrigger;
 
@@ -41,24 +47,51 @@ public class GameManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         string sceneName = scene.name;
-        if (sceneName == outroSceneName)
+        if (sceneName == outroSceneName && cursor != null)
         {
             Destroy(cursor.gameObject);
             cursor = null;
+            if (!visitedScenes.Contains(sceneName))
+            {
+                visitedScenes.Add(sceneName);
+                StartCoroutine(InvokedStart(sceneName, true));
+            }
+            else
+            {
+                NameGuessInstantiate();
+            }
         }
-        if (!visitedScenes.Contains(sceneName))
+        else if (!visitedScenes.Contains(sceneName))
         {
             visitedScenes.Add(sceneName);
             StartCoroutine(InvokedStart(sceneName));
         }
     }
-    private IEnumerator InvokedStart(string sceneName)
+    public void NameGuessInstantiate()
+    {
+        Instantiate(outroNameGuess);
+    }
+    private IEnumerator InvokedStart(string sceneName, bool ending = false)
     {
         yield return new WaitForEndOfFrame();
+        if (ending)
+        {
+            UnityEvent closeEvent = new UnityEvent();
+            closeEvent.AddListener(NameGuessInstantiate);
+            dialogueTrigger.SetEventClose(closeEvent);
+        }
         dialogueTrigger.DialogueStart(sceneName + "FirstLoad");
     }
     public void Solve(Character character)
     {
         PuzzlesSolved[character] = true;
+    }
+
+    public void GenerateCursor()
+    {
+        GameObject newCursor = Instantiate(cursorPrefab, targetChildCursor.parent.transform);
+        int targetIndex = targetChildCursor.transform.GetSiblingIndex();
+        newCursor.transform.SetSiblingIndex(targetIndex + 1);
+        cursor = newCursor.GetComponent<Cursor>();
     }
 }
