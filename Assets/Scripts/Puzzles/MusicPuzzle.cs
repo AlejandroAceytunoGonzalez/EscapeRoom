@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 public class MusicPuzzle : MonoBehaviour
@@ -9,6 +10,7 @@ public class MusicPuzzle : MonoBehaviour
     [SerializeField, ColorUsage(true, true)] private Color winColor;
     [SerializeField] private bool isDejaVu;
     [SerializeField] private DoorLogic doorObject;
+    [SerializeField] private float progressSpeed = 1f;
     [SerializeField] private Transform progressTransform;
     [SerializeField] private float progressFactor;
     [SerializeField] private GameObject musicRollsParent;
@@ -70,6 +72,8 @@ public class MusicPuzzle : MonoBehaviour
                 StartCoroutine(PlaySounds());
             }
         }
+        Vector3 targetPosition = new Vector3(0, progressFactor * progress, 0);
+        progressTransform.localPosition = Vector3.Lerp(progressTransform.localPosition, targetPosition, Time.deltaTime * progressSpeed);
     }
     private IEnumerator PlaySounds()
     {
@@ -146,6 +150,5 @@ public class MusicPuzzle : MonoBehaviour
             GameManager.Instance.Solve(Character.Bard);
             progressTransform.GetComponent<Renderer>().material.SetColor("_EmissionColor", winColor);
         }
-        progressTransform.localPosition = new Vector3(0, progressFactor * progress, 0);
     }
 }
