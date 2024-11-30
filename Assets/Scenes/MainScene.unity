@@ -5164,6 +5164,51 @@ PrefabInstance:
       addedObject: {fileID: 2042694985}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd8e8a5508b6b564f9736e92752f716f, type: 3}
+--- !u!1 &92161914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 92161915}
+  - component: {fileID: 92161916}
+  m_Layer: 0
+  m_Name: MusicSet
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &92161915
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92161914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92161916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92161914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c35f272757dca35449d4f00ce741c886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  index: 0
 --- !u!1001 &98297968
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40232,23 +40277,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3886679647396139533, guid: 95d496cd4db7d654185be4adb6ebe6c1,
-        type: 3}
-      propertyPath: cursorPrefab
-      value: 
-      objectReference: {fileID: 902133938805193513, guid: 1e39d8a24ee937e46bdcf8b3785f91cf,
-        type: 3}
-    - target: {fileID: 3886679647396139533, guid: 95d496cd4db7d654185be4adb6ebe6c1,
-        type: 3}
-      propertyPath: outroNameGuess
-      value: 
-      objectReference: {fileID: 1243034545202859978, guid: 2a6704b9e50f077498fd82305bf0332b,
-        type: 3}
-    - target: {fileID: 3886679647396139533, guid: 95d496cd4db7d654185be4adb6ebe6c1,
-        type: 3}
-      propertyPath: targetChildCursor
-      value: 
-      objectReference: {fileID: 2466110457780496201}
     - target: {fileID: 5957432147336881425, guid: 95d496cd4db7d654185be4adb6ebe6c1,
         type: 3}
       propertyPath: m_Name
@@ -40259,12 +40287,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95d496cd4db7d654185be4adb6ebe6c1, type: 3}
---- !u!4 &2466110457780496201 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5996279555652728229, guid: 95d496cd4db7d654185be4adb6ebe6c1,
-    type: 3}
-  m_PrefabInstance: {fileID: 2466110457780496200}
-  m_PrefabAsset: {fileID: 0}
 --- !u!23 &2553939766931144117
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -60343,3 +60365,4 @@ SceneRoots:
   - {fileID: 1991555608}
   - {fileID: 733881946}
   - {fileID: 2112848631}
+  - {fileID: 92161915}

@@ -28,4 +28,8 @@ public class NameGuessing : MonoBehaviour
             wrongGuess.DialogueStart();
         }
     }
+    public void Flee()
+    {
+        GameManager.Instance.SetTrack(0);
+    }
 }

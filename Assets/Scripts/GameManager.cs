@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Canvas outroNameGuess;
     [SerializeField] private GameObject cursorPrefab;
     [SerializeField] private Transform targetChildCursor;
+    [SerializeField] private MusicController music;
     public Cursor cursor;
     private DialogueTrigger dialogueTrigger;
 
@@ -70,6 +71,13 @@ public class GameManager : MonoBehaviour
     public void NameGuessInstantiate()
     {
         Instantiate(outroNameGuess);
+        StartCoroutine(InvokedSetTrack(1));
+    }
+    private IEnumerator InvokedSetTrack(int index)
+    {
+        yield return new WaitForEndOfFrame();
+        SetTrack(index);
+
     }
     private IEnumerator InvokedStart(string sceneName, bool ending = false)
     {
@@ -93,5 +101,17 @@ public class GameManager : MonoBehaviour
         int targetIndex = targetChildCursor.transform.GetSiblingIndex();
         newCursor.transform.SetSiblingIndex(targetIndex + 1);
         cursor = newCursor.GetComponent<Cursor>();
+    }
+    public void SetTrack(int index)
+    {
+        if (index < 0)
+        {
+            music.active = false;
+        }
+        else
+        {
+            music.active = true;
+            music.SelectTrack(index);
+        }
     }
 }
