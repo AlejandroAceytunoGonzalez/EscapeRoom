@@ -95,7 +95,10 @@ public class DialogueInkManager : MonoBehaviour
     public void GoToStartOfKnot(string knotName)
     {
         Container containerToGo = story.KnotContainerWithName(knotName);
-        story.ChoosePath(containerToGo.path);
-        NextLine();
+        if (containerToGo != null)
+        {
+            story.ChoosePath(containerToGo.path);
+            NextLine();
+        }
     }
 }

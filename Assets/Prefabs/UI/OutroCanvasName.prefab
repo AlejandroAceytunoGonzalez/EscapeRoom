@@ -1079,7 +1079,7 @@ MonoBehaviour:
   userInput: {fileID: 6314927377955823944}
   endingTrigger: {fileID: 6235276810736058671}
   wrongGuess: {fileID: 1964616134041535000}
-  endScene: MainScene
+  endScene: Credits
 --- !u!114 &6235276810736058671
 MonoBehaviour:
   m_ObjectHideFlags: 0
