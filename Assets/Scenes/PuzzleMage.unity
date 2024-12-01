@@ -45545,6 +45545,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: BookSpacebar
       objectReference: {fileID: 0}
+    - target: {fileID: 7408937324072921089, guid: a7ee83c1236eba84492262a7057cfb95,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7436098819878544084, guid: a7ee83c1236eba84492262a7057cfb95,
+        type: 3}
+      propertyPath: m_Volume
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

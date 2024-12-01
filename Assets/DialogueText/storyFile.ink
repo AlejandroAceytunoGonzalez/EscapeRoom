@@ -196,18 +196,22 @@ Yes the song! I almost lost the rhythm! Silly me, I should better focus. #Cadenz
 === PuzzleRogueSolvedAlready ===
     Nope. Nop. Yesn't. Nay. No. Nuh-huh. Not going in there again. #Tristan
     I already had enough ancient magic thrown at me for today, thanks. #Tristan
+    It's...   P   wh...?   H #Tristan?
     -> EndNode
     
 === PuzzleMageSolvedAlready ===
     It should be done already... Did I solve it wrong? Didn't see any red the last go... #Vyrn
+    Again- again-   R   again- again-   A   again- #Vyrn?
     -> EndNode
     
 === PuzzleClericSolvedAlready ===
     I shouldn't go there again. I already paid enough attention to other gods, and I don't want the Boss to get jealous.  #Faelen
+    O- lo. b-   C   behh-.   T   b... #Faelen?
     -> EndNode
     
 === PuzzleBardSolvedAlready ===
-    I already tuned it up... I should start noting down the melody instead!  #Cadenza
+    There was nothing to do there, so there's no point going in.  #Cadenza
+    That...   A   whis-pr...   S   I-... #Cadenza?
     -> EndNode
     
     
@@ -243,10 +247,10 @@ You alright there bud? You went sil- #Cadenza
 ...  #Faelen?
 ...  #Vyrn?
 ...  #Tristan?
-WHAT #Tristan?
-IS #Vyrn?
-MY #Faelen?
-NAME? #Cadenza?
+TAHW #Tristan?
+SI #Vyrn?
+YM #Faelen?
+?EMAN #Cadenza?
     ->EndNode
     
 === EndingBad ===
@@ -259,7 +263,7 @@ Yes, better not idle too much here. #Cadenza
     ->EndNode
 
 === WrongGuess ===
-THAT IS NOT MY NAME. #???
+.EMAN YM TON SI TAHT #???
     ->EndNode
     
 === EndingGood ===
@@ -286,6 +290,6 @@ And with that we have a plan! Off we go! #Tristan
 
 ... #???
 
-.~ nuf hcum os eb annog si siht oH #Phractas
-.~ sdneirf ,ytrap ruop nioj ot desaelP #Phractas
+.~ nuf hcum os eb annog si siht hO #Phractas
+.~ sdneirf ,ytrap ruoy nioj ot desaelP #Phractas
     ->EndNode

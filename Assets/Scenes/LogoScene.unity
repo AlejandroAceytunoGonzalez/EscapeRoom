@@ -464,7 +464,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: file://D:/Unity/Projects/EscapeRoom/Assets/Prefabs/UI/Logo.mp4
+  m_Url: file://C:/Users/Usuario/Desktop/DnDGame/Builds/Logo.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
